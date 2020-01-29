@@ -1,0 +1,2865 @@
+Last login: Wed Jan 29 10:43:00 on ttys000
+bog_student@Holbertons-iMac ~ % vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty64' version '20190514.0.0' is up to date...
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+bog_student@Holbertons-iMac ~ % vagrant ssh
+Welcome to Ubuntu 14.04.6 LTS (GNU/Linux 3.13.0-170-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Wed Jan 29 15:25:29 UTC 2020
+
+  System load:  0.01              Processes:           74
+  Usage of /:   4.2% of 39.34GB   Users logged in:     0
+  Memory usage: 26%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+New release '16.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Wed Jan 29 15:25:29 2020 from 10.0.2.2
+vagrant@vagrant-ubuntu-trusty-64:~$ git init
+Reinitialized existing Git repository in /home/vagrant/.git/
+vagrant@vagrant-ubuntu-trusty-64:~$ ls
+#Vagrantfile#  boom                                 holbertonschool-zero_day
+README.md      holberton-system_engineering-devops
+vagrant@vagrant-ubuntu-trusty-64:~$ rm -R holberton-system_engineering-devops
+rm: remove write-protected regular file 'holberton-system_engineering-devops/.git/objects/83/ba1f56c01f4ef1e5ff80c250507e69a03c62c2'? Y
+rm: remove write-protected regular file 'holberton-system_engineering-devops/.git/objects/0e/495d2a85835572d3008dc01b9403b7dff56c31'? yes
+rm: remove write-protected regular file 'holberton-system_engineering-devops/.git/objects/42/425a3126eda26e7928b2ffeccc47a68b666fc4'? y
+rm: remove write-protected regular file 'holberton-system_engineering-devops/.git/objects/82/fa83f260403f1acf0de49a914fd892f828da5e'? rm -f
+rm: cannot remove 'holberton-system_engineering-devops/.git/objects/82': Directory not empty
+rm: remove write-protected regular file 'holberton-system_engineering-devops/.git/objects/95/c45689f451788c1233140b9596c5e3e1cb3330'? yes "$string" | head -n $number | tr $'\n' $'\r'
+rm: remove write-protected regular file 'holberton-system_engineering-devops/.git/objects/84/0de897b341ecefedfc2536cb472fa157ffc80b'? yes "$string" | head -n $number | tr $'\n' $'\r'd
+rm: remove write-protected regular file 'holberton-system_engineering-devops/.git/objects/12/81db5ae75b184fbc7cca6b2e7bc03b03ec4fe6'? x^X^C
+vagrant@vagrant-ubuntu-trusty-64:~$ ^C
+vagrant@vagrant-ubuntu-trusty-64:~$ ls
+#Vagrantfile#  boom                                 holbertonschool-zero_day
+README.md      holberton-system_engineering-devops
+vagrant@vagrant-ubuntu-trusty-64:~$ rm -rf holberton-system_engineering-devops
+vagrant@vagrant-ubuntu-trusty-64:~$ ls
+#Vagrantfile#  README.md  boom  holbertonschool-zero_day
+vagrant@vagrant-ubuntu-trusty-64:~$ mkdir holberton-system_engineering-devops
+vagrant@vagrant-ubuntu-trusty-64:~$ cd holberton-system_engineering-devops
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ echo "# holberton-system_engineering-devops" >> README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git initInitialized empty Git repository in /home/vagrant/holberton-system_engineering-devops/.git/
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git add README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git commit -m "first commit"
+[master (root-commit) 3da980b] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git remote add origin https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git push -u origin master
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 255 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ ls
+README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ mkdir 0x00-shell_basics
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ ls
+0x00-shell_basics  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git push origin
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Everything up-to-date
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ ls
+0x00-shell_basics  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ cd 0*
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops/0x00-shell_basics$ touch 0-current_working_directory
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops/0x00-shell_basics$ cd-
+No command 'cd-' found, did you mean:
+ Command 'cdp' from package 'irpas' (multiverse)
+ Command 'cd5' from package 'cd5' (universe)
+ Command 'cde' from package 'cde' (universe)
+ Command 'cdv' from package 'codeville' (universe)
+ Command 'cdb' from package 'tinycdb' (main)
+ Command 'cdw' from package 'cdw' (universe)
+ Command 'cdi' from package 'cdo' (universe)
+ Command 'cdo' from package 'cdo' (universe)
+cd-: command not found
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops/0x00-shell_basics$ cd-
+No command 'cd-' found, did you mean:
+ Command 'cdo' from package 'cdo' (universe)
+ Command 'cdw' from package 'cdw' (universe)
+ Command 'cdp' from package 'irpas' (multiverse)
+ Command 'cdv' from package 'codeville' (universe)
+ Command 'cde' from package 'cde' (universe)
+ Command 'cdi' from package 'cdo' (universe)
+ Command 'cdb' from package 'tinycdb' (main)
+ Command 'cd5' from package 'cd5' (universe)
+cd-: command not found
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops/0x00-shell_basics$ cd -
+/home/vagrant/holberton-system_engineering-devops
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ ls
+0x00-shell_basics  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git push origin
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Everything up-to-date
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ ls
+0x00-shell_basics  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  0x00-shell_basics/
+
+nothing added to commit but untracked files present (use "git add" to track)
+vagrant@vagrant-ubuntu-trusty-64:~/holberton-system_engineering-devops$ cd
+vagrant@vagrant-ubuntu-trusty-64:~$ zsh
+vagrant-ubuntu-trusty-64% sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+Cloning Oh My Zsh...
+Cloning into '/home/vagrant/.oh-my-zsh'...
+remote: Enumerating objects: 1128, done.
+remote: Counting objects: 100% (1128/1128), done.
+remote: Compressing objects: 100% (1093/1093), done.
+remote: Total 1128 (delta 22), reused 932 (delta 17), pack-reused 0
+Receiving objects: 100% (1128/1128), 733.82 KiB | 473.00 KiB/s, done.
+Resolving deltas: 100% (22/22), done.
+Checking connectivity... done.
+
+Looking for an existing zsh config...
+Found ~/.zshrc. Backing up to /home/vagrant/.zshrc.pre-oh-my-zsh
+Using the Oh My Zsh template file and adding it to ~/.zshrc.
+
+Time to change your default shell to zsh:
+Do you want to change your default shell to zsh? [Y/n] y
+Changing the shell...
+Password: 
+chsh: PAM: Authentication failure
+Error: chsh command unsuccessful. Change your default shell manually.
+
+         __                                     __
+  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
+                        /____/                       ....is now installed!
+
+
+Please look over the ~/.zshrc file to select plugins, themes, and options.
+
+p.s. Follow us on https://twitter.com/ohmyzsh
+
+p.p.s. Get stickers, shirts, and coffee mugs at https://shop.planetargon.com/collections/oh-my-zsh
+
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ ls        
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics
+➜  holberton-system_engineering-devops git:(master) ✗ git push origin
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Everything up-to-date
+➜  holberton-system_engineering-devops git:(master) ✗ ls      
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics
+➜  holberton-system_engineering-devops git:(master) ✗ git push 
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Everything up-to-date
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics
+➜  holberton-system_engineering-devops git:(master) ✗ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  new file:   0x00-shell_basics/0-current_working_directory
+
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "update"
+[master 92f16f7] update
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 0x00-shell_basics/0-current_working_directory
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 5, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 350 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   3da980b..92f16f7  master -> master
+➜  holberton-system_engineering-devops git:(master) ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ls
+0-current_working_directory
+➜  0x00-shell_basics git:(master) emacs 0-current_working_directory 
+
+[1]  + 4135 suspended  emacs 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ emacs 0-current_working_directory 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x file 0-current_working_directory 
+chmod: cannot access 'file': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 0-current_working_directory  
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ git add 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ git commit -m "update1"
+[master 78cbbae] update1
+ 1 file changed, 2 insertions(+)
+ mode change 100644 => 100755 0x00-shell_basics/0-current_working_directory
+➜  0x00-shell_basics git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 365 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   92f16f7..78cbbae  master -> master
+➜  0x00-shell_basics git:(master) cd -
+~/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) pwd
+/home/vagrant/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) cd 0*
+➜  0x00-shell_basics git:(master) ./0-current_working_directory
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics
+➜  0x00-shell_basics git:(master) ls
+0-current_working_directory
+➜  0x00-shell_basics git:(master) touch 1-listit
+➜  0x00-shell_basics git:(master) ✗ emacs 1-listit 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 1-listit
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  1-listit~
+➜  0x00-shell_basics git:(master) ✗ rm 1-listit~
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit
+➜  0x00-shell_basics git:(master) ✗ ./1-listit
+0-current_working_directory  1-listit
+➜  0x00-shell_basics git:(master) ✗ touch 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ pwd
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home
+
+➜  0x00-shell_basics git:(master) ✗ emacs 0-current_working_directory 
+➜  0x00-shell_basics git:(master) ✗ ./0-current_working_directory
+
+➜  0x00-shell_basics git:(master) ✗ emacs 0-current_working_directory 
+➜  0x00-shell_basics git:(master) ✗ ./0-current_working_directory
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics
+➜  0x00-shell_basics git:(master) ✗ LS
+zsh: command not found: LS
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 1-listit 
+
+[2]  + 4543 suspended  emacs 1-listit
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./1-listit
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[3]  + 4572 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[4]  + 4593 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home
+
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[5]  + 4629 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home
+/home/vagrant
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[6]  + 4674 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home
+
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[7]  + 4694 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home
+
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home
+
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[8]  + 4876 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[9]  + 4905 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ pwd
+/home/vagrant
+➜  ~ git:(master) ✗ pwd        
+/home/vagrant
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[10]  + 4976 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ rm \#2-bring_me_home\# 
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[11]  + 5021 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ touch 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[12]  + 5065 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[13]  + 5110 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+./2-bring_me_home: line 2: cd: ./home: No such file or directory
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home  
+
+[14]  + 5131 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[15]  + 5151 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home  
+
+[16]  + 5174 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ cd -
+~/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "update2"
+[master ad0050a] update2
+ 4 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100755 0x00-shell_basics/1-listit
+ create mode 100755 0x00-shell_basics/2-bring_me_home
+ create mode 100755 0x00-shell_basics/2-bring_me_home~
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 10, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 553 bytes | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   78cbbae..ad0050a  master -> master
+➜  holberton-system_engineering-devops git:(master) ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ls
+0-current_working_directory  1-listit  2-bring_me_home  2-bring_me_home~
+➜  0x00-shell_basics git:(master) emacs 2-bring_me_home 
+
+[17]  + 5265 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+./2-bring_me_home: line 2: cd: /home/vagrant/home: No such file or directory
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[18]  + 5286 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+./2-bring_me_home: line 2: cd: /home/vagrant/home: No such file or directory
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[19]  + 5306 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ touch 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+
+[20]  + 5341 suspended  emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ touch 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ less 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 2-bring_me_home                 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  1-listit  2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ touch 3-listfiles
+➜  0x00-shell_basics git:(master) ✗ emacs 3-listfiles 
+
+[21]  + 5428 suspended  emacs 3-listfiles
+➜  0x00-shell_basics git:(master) ✗ less 3-listfiles 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 3-listfiles
+➜  0x00-shell_basics git:(master) ✗ ./3-listfiles 
+total 16
+-rwxrw-r-- 1 vagrant vagrant 26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant 14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 vagrant vagrant 21 Jan 29 17:07 2-bring_me_home
+-rwxr--r-- 1 vagrant vagrant 17 Jan 29 17:08 3-listfiles
+-rw-r--r-- 1 vagrant vagrant  0 Jan 29 17:08 3-listfiles~
+➜  0x00-shell_basics git:(master) ✗ touch 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ emacs 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ ./4-listmorefiles 
+total 28
+drwxrwxr-x 2 vagrant vagrant 4096 Jan 29 17:10 .
+drwxrwxr-x 4 vagrant vagrant 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 vagrant vagrant   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 vagrant vagrant   21 Jan 29 17:07 2-bring_me_home
+-rwxr--r-- 1 vagrant vagrant   17 Jan 29 17:08 3-listfiles
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 17:08 3-listfiles~
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:10 4-listmorefiles
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 17:10 4-listmorefiles~
+➜  0x00-shell_basics git:(master) ✗ rm 3-listfiles\~ 
+➜  0x00-shell_basics git:(master) ✗ rm 4-listmorefiles\~ 
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+./2-bring_me_home: line 2: cdpath: command not found
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+./2-bring_me_home: line 2: CDPATH: command not found
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ ./2-bring_me_home 
+./2-bring_me_home: line 2: /home/vagrant: Is a directory
+➜  0x00-shell_basics git:(master) ✗ ./4-listmorefiles 
+total 28
+drwxrwxr-x 2 vagrant vagrant 4096 Jan 29 17:13 .
+drwxrwxr-x 4 vagrant vagrant 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 vagrant vagrant   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 vagrant vagrant   19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 vagrant vagrant   17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -al
+total 28
+drwxrwxr-x 2 vagrant vagrant 4096 Jan 29 17:13 .
+drwxrwxr-x 4 vagrant vagrant 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 vagrant vagrant   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 vagrant vagrant   19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 vagrant vagrant   17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -la
+total 28
+drwxrwxr-x 2 vagrant vagrant 4096 Jan 29 17:13 .
+drwxrwxr-x 4 vagrant vagrant 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 vagrant vagrant   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 vagrant vagrant   19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 vagrant vagrant   17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -
+-1                        -- single column output                             
+--all                 -a  -- list entries starting with .                     
+--almost-all          -A  -- list all except . and ..                         
+--author                  -- print the author of each file                    
+--block-size              -- specify block size                               
+-c                        -- status change time                               
+-C                        -- list entries in columns sorted vertically        
+--classify            -F  -- append file type indicators                      
+--dereference         -L  -- list referenced file for sym link                
+--directory           -d  -- list directory entries instead of contents       
+--dired               -D  -- generate output designed for Emacs' dired mode   
+--escape              -b  -- print octal escapes for control characters       
+-f                        -- unsorted, all, short list                        
+--file-type           -p  -- append file type indicators except *             
+--full-time               -- list both full date and full time                
+-g                        -- long listing but without owner information       
+--help                    -- display help information                         
+--hide-control-chars  -q  -- hide control chars                               
+--human-readable      -h  -- print sizes in human readable form               
+--ignore              -I  -- don't list entire matching pattern               
+--ignore-backups      -B  -- don't list entries ending with ~                 
+--inode               -i  -- print file inode numbers                         
+--kilobytes           -k  -- use block size of 1k                             
+-l                        -- long listing                                     
+--literal             -N  -- print raw characters                             
+-m                        -- comma separated                                  
+--no-group            -G  -- inhibit display of group information             
+--numeric-uid-gid     -n  -- numeric uid, gid                                 
+-o                        -- no group, long                                   
+--quote-name          -Q  -- quote names                                      
+--recursive           -R  -- list subdirectories recursively                  
+--reverse             -r  -- reverse sort order                               
+-S                        -- sort by size                                     
+--si                  -H  -- sizes in human readable form; powers of 1000     
+--size                -s  -- display size of each file in blocks              
+-t                        -- sort by modification time                        
+--tabsize             -T  -- specify tab size                                 
+--time                    -- specify time to show                             
+--time-style              -- show times using specified style                 
+-u                        -- access time                                      
+-U                        -- unsorted                                         
+-v                        -- sort by version (filename treated numerically)   
+--version                 -- display version information                      
+--width               -w  -- specify screen width                             
+-x                        -- sort horizontally                                
+-X                        -- sort by extension                                
+--dereference-command-line               
+--dereference-command-line-symlink-to-dir
+--format                                 
+--indicator-style                        
+--quoting-style                          
+--show-control-chars                     
+--sort                                   
+➜  0x00-shell_basics git:(master) ✗ ls -n
+total 20
+-rwxrw-r-- 1 1000 1000 26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 1000 1000 14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 1000 1000 19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 1000 1000 17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 1000 1000 18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -m
+0-current_working_directory, 1-listit, 2-bring_me_home, 3-listfiles,
+4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -la
+total 28
+drwxrwxr-x 2 vagrant vagrant 4096 Jan 29 17:13 .
+drwxrwxr-x 4 vagrant vagrant 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 vagrant vagrant   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 vagrant vagrant   19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 vagrant vagrant   17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -al
+total 28
+drwxrwxr-x 2 vagrant vagrant 4096 Jan 29 17:13 .
+drwxrwxr-x 4 vagrant vagrant 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 vagrant vagrant   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 vagrant vagrant   19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 vagrant vagrant   17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls-ln
+zsh: command not found: ls-ln
+➜  0x00-shell_basics git:(master) ✗ ls -n
+total 20
+-rwxrw-r-- 1 1000 1000 26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 1000 1000 14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 1000 1000 19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 1000 1000 17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 1000 1000 18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -la ls -n
+ls: cannot access ls: No such file or directory
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  2-bring_me_home  4-listmorefiles
+1-listit                     3-listfiles
+➜  0x00-shell_basics git:(master) ✗ ls -an
+total 28
+drwxrwxr-x 2 1000 1000 4096 Jan 29 17:13 .
+drwxrwxr-x 4 1000 1000 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 1000 1000   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 1000 1000   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 1000 1000   19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 1000 1000   17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 1000 1000   18 Jan 29 17:10 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ touch 5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ emacs 5-listfilesdigitonly 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles           5-listfilesdigitonly~
+1-listit                     4-listmorefiles
+2-bring_me_home              5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ ./5-listfilesdigitonly 
+total 32
+drwxrwxr-x 2 1000 1000 4096 Jan 29 17:24 .
+drwxrwxr-x 4 1000 1000 4096 Jan 29 15:39 ..
+-rwxrw-r-- 1 1000 1000   26 Jan 29 16:00 0-current_working_directory
+-rwxr--r-- 1 1000 1000   14 Jan 29 15:55 1-listit
+-rwxr--r-- 1 1000 1000   19 Jan 29 17:13 2-bring_me_home
+-rwxr--r-- 1 1000 1000   17 Jan 29 17:08 3-listfiles
+-rwxr--r-- 1 1000 1000   18 Jan 29 17:10 4-listmorefiles
+-rwxr--r-- 1 1000 1000   18 Jan 29 17:24 5-listfilesdigitonly
+-rw-r--r-- 1 1000 1000    0 Jan 29 17:23 5-listfilesdigitonly~
+➜  0x00-shell_basics git:(master) ✗ ls -a
+.                            1-listit         4-listmorefiles
+..                           2-bring_me_home  5-listfilesdigitonly
+0-current_working_directory  3-listfiles      5-listfilesdigitonly~
+➜  0x00-shell_basics git:(master) ✗ rm 5-listfilesdigitonly\~ 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  2-bring_me_home  4-listmorefiles
+1-listit                     3-listfiles      5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ mkdir holberton /tmp
+mkdir: cannot create directory '/tmp': File exists
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd /tmp
+➜  /tmp ls
+➜  /tmp mkdir holberton /tmp
+mkdir: cannot create directory '/tmp': File exists
+➜  /tmp ls
+holberton
+➜  /tmp rm holberton 
+rm: cannot remove 'holberton': Is a directory
+➜  /tmp ls
+holberton
+➜  /tmp rm -R holberton 
+➜  /tmp ls
+➜  /tmp ls
+➜  /tmp mkdir holberton /tmp
+mkdir: cannot create directory '/tmp': File exists
+➜  /tmp ls
+holberton
+➜  /tmp rm -R holberton 
+➜  /tmp mkdir /tmp/holberton/
+➜  /tmp ls
+holberton
+➜  /tmp rm -R holberton      
+➜  /tmp cd
+➜  ~ git:(master) ✗ mkdir /tmp/holberton/
+➜  ~ git:(master) ✗ cd /tmp
+➜  /tmp ls
+holberton
+➜  /tmp rm -R holberton      
+➜  /tmp cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics     
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  2-bring_me_home  4-listmorefiles       holberton
+1-listit                     3-listfiles      5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ rm -R holberton                       
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  2-bring_me_home  4-listmorefiles
+1-listit                     3-listfiles      5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ touch 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ emacs 6-firstdirectory 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles           6-firstdirectory
+1-listit                     4-listmorefiles       6-firstdirectory~
+2-bring_me_home              5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ ./6-firstdirectory 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles           6-firstdirectory
+1-listit                     4-listmorefiles       6-firstdirectory~
+2-bring_me_home              5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ cd /tmp 
+➜  /tmp ls
+holberton
+➜  /tmp cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles           6-firstdirectory
+1-listit                     4-listmorefiles       6-firstdirectory~
+2-bring_me_home              5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ rm 6-firstdirectory\~ 
+➜  0x00-shell_basics git:(master) ✗ cd -
+~/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics/
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like '0x00-shell_basics/2-bring_me_home~' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like '0x00-shell_basics/2-bring_me_home~' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
+➜  holberton-system_engineering-devops git:(master) ✗ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   0x00-shell_basics/2-bring_me_home
+  new file:   0x00-shell_basics/3-listfiles
+  new file:   0x00-shell_basics/4-listmorefiles
+  new file:   0x00-shell_basics/5-listfilesdigitonly
+  new file:   0x00-shell_basics/6-firstdirectory
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  deleted:    0x00-shell_basics/2-bring_me_home~
+
+➜  holberton-system_engineering-devops git:(master) ✗ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   0x00-shell_basics/2-bring_me_home
+  new file:   0x00-shell_basics/3-listfiles
+  new file:   0x00-shell_basics/4-listmorefiles
+  new file:   0x00-shell_basics/5-listfilesdigitonly
+  new file:   0x00-shell_basics/6-firstdirectory
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  deleted:    0x00-shell_basics/2-bring_me_home~
+
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ touch 0x00-shell_basics/2-bring_me_home~
+touch: cannot touch '0x00-shell_basics/2-bring_me_home~': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ touch 2-bring_me_home~
+➜  0x00-shell_basics git:(master) ✗ cd -
+~/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics/
+➜  holberton-system_engineering-devops git:(master) ✗ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   0x00-shell_basics/2-bring_me_home
+  modified:   0x00-shell_basics/2-bring_me_home~
+  new file:   0x00-shell_basics/3-listfiles
+  new file:   0x00-shell_basics/4-listmorefiles
+  new file:   0x00-shell_basics/5-listfilesdigitonly
+  new file:   0x00-shell_basics/6-firstdirectory
+
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "add"
+[master 10a3e83] add
+ 6 files changed, 9 insertions(+), 3 deletions(-)
+ mode change 100755 => 100644 0x00-shell_basics/2-bring_me_home~
+ create mode 100755 0x00-shell_basics/3-listfiles
+ create mode 100755 0x00-shell_basics/4-listmorefiles
+ create mode 100755 0x00-shell_basics/5-listfilesdigitonly
+ create mode 100755 0x00-shell_basics/6-firstdirectory
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+jUsername for 'https://github.com':juandsuarezz                        
+Password for 'https://juandsuarezz@github.com': 
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/juandsuarezz/holberton-system_engineering-devops.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  holberton-system_engineering-devops git:(master) git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/juandsuarezz/holberton-system_engineering-devops.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  holberton-system_engineering-devops git:(master) git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  holberton-system_engineering-devops git:(master) git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/juandsuarezz/holberton-system_engineering-devops
+   ad0050a..f61eb88  master     -> origin/master
+CONFLICT (modify/delete): 0x00-shell_basics/2-bring_me_home~ deleted in f61eb886412c0050241d175fb433f29ff9e4d47f and modified in HEAD. Version HEAD of 0x00-shell_basics/2-bring_me_home~ left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+➜  holberton-system_engineering-devops git:(master) ✗ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+  deleted by them:    0x00-shell_basics/2-bring_me_home~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  2-bring_me_home~  5-listfilesdigitonly
+1-listit                     3-listfiles       6-firstdirectory
+2-bring_me_home              4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ 
+➜  0x00-shell_basics git:(master) ✗ cd -
+~/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics/
+fatal: unable to stat '0x00-shell_basics/2-bring_me_home~': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics
+fatal: unable to stat '0x00-shell_basics/2-bring_me_home~': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles           6-firstdirectory
+1-listit                     4-listmorefiles
+2-bring_me_home              5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ git add 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ git add 3-listfiles 
+➜  0x00-shell_basics git:(master) ✗ git add 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ git add 5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ git add 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+  deleted by them:    2-bring_me_home~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  0x00-shell_basics git:(master) ✗ git pull
+U  0x00-shell_basics/2-bring_me_home~
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+➜  0x00-shell_basics git:(master) ✗ rm 0x00-shell_basics/2-bring_me_home~
+rm: cannot remove '0x00-shell_basics/2-bring_me_home~': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ git add 
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+➜  0x00-shell_basics git:(master) ✗ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz 
+Password for 'https://juandsuarezz @github.com': 
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/juandsuarezz/holberton-system_engineering-devops.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  0x00-shell_basics git:(master) ✗ less 0-current_working_directory  
+➜  0x00-shell_basics git:(master) ✗ less 1-listit 
+➜  0x00-shell_basics git:(master) ✗ less 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ less 3-listfiles 
+➜  0x00-shell_basics git:(master) ✗ less 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ less 5-listfilesdigitonly 
+➜  0x00-shell_basics git:(master) ✗ less 6-firstdirectory 
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ rm -rf holberton-system_engineering-devops 
+➜  ~ git:(master) ✗ ls
+#Vagrantfile#  README.md  boom  holbertonschool-zero_day
+➜  ~ git:(master) ✗ touch holberton-system_engineering-devops
+➜  ~ git:(master) ✗ echo "# holberton-system_engineering-devops" >> README.md
+➜  ~ git:(master) ✗ git init
+Reinitialized existing Git repository in /home/vagrant/.git/
+➜  ~ git:(master) ✗ git add README.md
+➜  ~ git:(master) ✗ git commit -m "first commit"
+[master 4d806cb] first commit
+ 1 file changed, 1 insertion(+)
+➜  ~ git:(master) ✗ git remote add origin https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+fatal: remote origin already exists.
+➜  ~ git:(master) ✗ mkdir holberton-system_engineering-devops
+mkdir: cannot create directory 'holberton-system_engineering-devops': File exists
+➜  ~ git:(master) ✗ ls      
+#Vagrantfile#  boom                                 holbertonschool-zero_day
+README.md      holberton-system_engineering-devops
+➜  ~ git:(master) ✗ rm holberton-system_engineering-devops 
+➜  ~ git:(master) ✗ mkdir holberton-system_engineering-devops
+➜  ~ git:(master) ✗ ls
+#Vagrantfile#  boom                                 holbertonschool-zero_day
+README.md      holberton-system_engineering-devops
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ echo "# holberton-system_engineering-devops" >> README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git init
+Initialized empty Git repository in /home/vagrant/holberton-system_engineering-devops/.git/
+➜  holberton-system_engineering-devops git:(master) ✗ git add README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "first commit"
+[master (root-commit) e67231a] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+➜  holberton-system_engineering-devops git:(master) git remote add origin https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+➜  holberton-system_engineering-devops git:(master) git push -u origin master
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 255 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+➜  holberton-system_engineering-devops git:(master) touch 0-current_working_directory
+➜  holberton-system_engineering-devops git:(master) ✗ rm 0-current_working_directory 
+➜  holberton-system_engineering-devops git:(master) mkdir 0x00-shell_basics
+➜  holberton-system_engineering-devops git:(master) ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) touch 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ emacs 0-current_working_directory          
+➜  0x00-shell_basics git:(master) ✗ touch 1-listit
+➜  0x00-shell_basics git:(master) ✗ emacs 1-listit 
+➜  0x00-shell_basics git:(master) ✗ touch 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ touch 3-listfiles
+➜  0x00-shell_basics git:(master) ✗ emacs 3-listfiles
+➜  0x00-shell_basics git:(master) ✗ touch 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ emacs 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ touch 5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ emacs 5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ touch 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ emacs 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 1-listit
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 3-listfiles
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory   2-bring_me_home~  5-listfilesdigitonly
+0-current_working_directory~  3-listfiles       5-listfilesdigitonly~
+1-listit                      3-listfiles~      6-firstdirectory
+1-listit~                     4-listmorefiles   6-firstdirectory~
+2-bring_me_home               4-listmorefiles~
+➜  0x00-shell_basics git:(master) ✗ rm 0-current_working_directory\~ 
+➜  0x00-shell_basics git:(master) ✗ rm 1-listit\~ 
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home\~ rm 3-listfiles\~ 
+rm: cannot remove 'rm': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ rm 2-bring_me_home 4-listmorefiles\~ 
+➜  0x00-shell_basics git:(master) ✗ rm 5-listfilesdigitonly\~ 
+➜  0x00-shell_basics git:(master) ✗ rm 6-firstdirectory\~ 
+➜  0x00-shell_basics git:(master) ✗ ./0-current_working_directory 
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics
+➜  0x00-shell_basics git:(master) ✗ mv /tmp/betty /tmp/holberton
+mv: cannot stat '/tmp/betty': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd ?tmp
+zsh: no matches found: ?tmp
+➜  ~ git:(master) ✗ cd /tmp
+➜  /tmp ls
+holberton
+➜  /tmp touch betty
+➜  /tmp mv /tmp/betty /tmp/holberton
+➜  /tmp touch betty mv /tmp/betty /tmp/holberton
+➜  /tmp ls
+betty  holberton  mv
+➜  /tmp rm betty
+➜  /tmp rm mv
+➜  /tmp cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles      5-listfilesdigitonly
+1-listit                     4-listmorefiles  6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ touch 7-movethatfile
+➜  0x00-shell_basics git:(master) ✗ emacs 7-movethatfile 
+➜  0x00-shell_basics git:(master) ✗ rm /tmp/holberton/betty
+➜  0x00-shell_basics git:(master) ✗ touch 8-firstdelete
+➜  0x00-shell_basics git:(master) ✗ emacs 8-firstdelete 
+➜  0x00-shell_basics git:(master) ✗ rm -R /tmp/holberton
+➜  0x00-shell_basics git:(master) ✗ file /tmp/holberton
+/tmp/holberton: ERROR: cannot open `/tmp/holberton' (No such file or directory)
+➜  0x00-shell_basics git:(master) ✗ touch 9-firstdirdeletion
+➜  0x00-shell_basics git:(master) ✗ emacs 9-firstdirdeletion
+➜  0x00-shell_basics git:(master) ✗ emacs 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ ls      
+0-current_working_directory  5-listfilesdigitonly  8-firstdelete
+1-listit                     6-firstdirectory      8-firstdelete~
+3-listfiles                  7-movethatfile        9-firstdirdeletion
+4-listmorefiles              7-movethatfile~       9-firstdirdeletion~
+➜  0x00-shell_basics git:(master) ✗ touch 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home
+➜  0x00-shell_basics git:(master) ✗ less 1-listit
+➜  0x00-shell_basics git:(master) ✗ less 3-listfiles
+➜  0x00-shell_basics git:(master) ✗ less 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  4-listmorefiles       8-firstdelete
+1-listit                     5-listfilesdigitonly  8-firstdelete~
+2-bring_me_home              6-firstdirectory      9-firstdirdeletion
+2-bring_me_home~             7-movethatfile        9-firstdirdeletion~
+3-listfiles                  7-movethatfile~
+➜  0x00-shell_basics git:(master) ✗ touch 10-back
+➜  0x00-shell_basics git:(master) ✗ emacs 10-back
+➜  0x00-shell_basics git:(master) ✗ less 10-back
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles           8-firstdelete
+1-listit                     4-listmorefiles       8-firstdelete~
+10-back                      5-listfilesdigitonly  9-firstdirdeletion
+10-back~                     6-firstdirectory      9-firstdirdeletion~
+2-bring_me_home              7-movethatfile
+2-bring_me_home~             7-movethatfile~
+➜  0x00-shell_basics git:(master) ✗ touch 11-lists
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists
+➜  0x00-shell_basics git:(master) ✗ ls -a ls -a /boot          
+ls: cannot access ls: No such file or directory
+/boot:
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+➜  0x00-shell_basics git:(master) ✗ ls -a 0x00-shell_basics ls -a /boot
+ls: cannot access 0x00-shell_basics: No such file or directory
+ls: cannot access ls: No such file or directory
+/boot:
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+➜  0x00-shell_basics git:(master) ✗ ls -a /0x00-shell_basics ls -a /boot
+ls: cannot access /0x00-shell_basics: No such file or directory
+ls: cannot access ls: No such file or directory
+/boot:
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+➜  0x00-shell_basics git:(master) ✗ ls -a /holberton-system_engineering-devops
+ls: cannot access /holberton-system_engineering-devops: No such file or directory
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ pwd
+/home/vagrant/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /home/vagrant/holberton-system_engineering-devops
+.  ..  .git  0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics ls -a /home/vagrant/holberton-system_engineering-devops ls -a /boot
+ls: cannot access ls: No such file or directory
+ls: cannot access ls: No such file or directory
+/boot:
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+
+/home/vagrant/holberton-system_engineering-devops:
+.  ..  .git  0x00-shell_basics  README.md
+
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics:
+.                            2-bring_me_home       7-movethatfile~
+..                           2-bring_me_home~      8-firstdelete
+0-current_working_directory  3-listfiles           8-firstdelete~
+1-listit                     4-listmorefiles       9-firstdirdeletion
+10-back                      5-listfilesdigitonly  9-firstdirdeletion~
+10-back~                     6-firstdirectory
+11-lists                     7-movethatfile
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics
+.                            2-bring_me_home       7-movethatfile~
+..                           2-bring_me_home~      8-firstdelete
+0-current_working_directory  3-listfiles           8-firstdelete~
+1-listit                     4-listmorefiles       9-firstdirdeletion
+10-back                      5-listfilesdigitonly  9-firstdirdeletion~
+10-back~                     6-firstdirectory
+11-lists                     7-movethatfile
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /home/vagrant/holberton-system_engineering-devops
+.  ..  .git  0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /boot
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics ls -a /home/vagrant/holberton-system_engineering-devops ls -a /boot
+ls: cannot access ls: No such file or directory
+ls: cannot access ls: No such file or directory
+/boot:
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+
+/home/vagrant/holberton-system_engineering-devops:
+.  ..  .git  0x00-shell_basics  README.md
+
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics:
+.                            2-bring_me_home       7-movethatfile~
+..                           2-bring_me_home~      8-firstdelete
+0-current_working_directory  3-listfiles           8-firstdelete~
+1-listit                     4-listmorefiles       9-firstdirdeletion
+10-back                      5-listfilesdigitonly  9-firstdirdeletion~
+10-back~                     6-firstdirectory
+11-lists                     7-movethatfile
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics  ls -a /home/vagrant/holberton-system_engineering-devops  ls -a /boot
+ls: cannot access ls: No such file or directory
+ls: cannot access ls: No such file or directory
+/boot:
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+
+/home/vagrant/holberton-system_engineering-devops:
+.  ..  .git  0x00-shell_basics  README.md
+
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics:
+.                            2-bring_me_home       7-movethatfile~
+..                           2-bring_me_home~      8-firstdelete
+0-current_working_directory  3-listfiles           8-firstdelete~
+1-listit                     4-listmorefiles       9-firstdirdeletion
+10-back                      5-listfilesdigitonly  9-firstdirdeletion~
+10-back~                     6-firstdirectory
+11-lists                     7-movethatfile
+➜  holberton-system_engineering-devops git:(master) ✗ ls -a /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics .  ls -a /home/vagrant/holberton-system_engineering-devops . ls -a /boot
+ls: cannot access ls: No such file or directory
+ls: cannot access ls: No such file or directory
+.:
+.  ..  .git  0x00-shell_basics  README.md
+
+.:
+.  ..  .git  0x00-shell_basics  README.md
+
+/boot:
+.                              grub
+..                             initrd.img-3.13.0-170-generic
+System.map-3.13.0-170-generic  vmlinuz-3.13.0-170-generic
+config-3.13.0-170-generic
+
+/home/vagrant/holberton-system_engineering-devops:
+.  ..  .git  0x00-shell_basics  README.md
+
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics:
+.                            2-bring_me_home       7-movethatfile~
+..                           2-bring_me_home~      8-firstdelete
+0-current_working_directory  3-listfiles           8-firstdelete~
+1-listit                     4-listmorefiles       9-firstdirdeletion
+10-back                      5-listfilesdigitonly  9-firstdirdeletion~
+10-back~                     6-firstdirectory
+11-lists                     7-movethatfile
+➜  holberton-system_engineering-devops git:(master) ✗ touch /tmp/holberton/betty rm /tmp/holberton/betty
+touch: cannot touch '/tmp/holberton/betty': No such file or directory
+touch: cannot touch '/tmp/holberton/betty': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ touch /tmp/holberton/betty
+touch: cannot touch '/tmp/holberton/betty': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ touch /tmp/holberton/betty
+touch: cannot touch '/tmp/holberton/betty': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ touch /tmp/holberton/betty 
+touch: cannot touch '/tmp/holberton/betty': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ touch betty /tmp/holberton/ rm /tmp/holberton/betty
+touch: setting times of '/tmp/holberton/': No such file or directory
+touch: cannot touch '/tmp/holberton/betty': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ rm /tmp/holberton/betty
+rm: cannot remove '/tmp/holberton/betty': No such file or directory
+➜  holberton-system_engineering-devops git:(master) ✗ mkdir /tmp/holberton/
+➜  holberton-system_engineering-devops git:(master) ✗ touch Betty /tmp/holberton/ rm /tmp/holberton/betty
+➜  holberton-system_engineering-devops git:(master) ✗ cd     
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  2-bring_me_home~      7-movethatfile~
+1-listit                     3-listfiles           8-firstdelete
+10-back                      4-listmorefiles       8-firstdelete~
+10-back~                     5-listfilesdigitonly  9-firstdirdeletion
+11-lists                     6-firstdirectory      9-firstdirdeletion~
+2-bring_me_home              7-movethatfile
+➜  0x00-shell_basics git:(master) ✗ emacs 7-movethatfile
+➜  0x00-shell_basics git:(master) ✗ touch Betty /tmp/holberton/ mv /tmp/betty /tmp/holberton
+➜  0x00-shell_basics git:(master) ✗  rm /tmp/holberton/betty
+➜  0x00-shell_basics git:(master) ✗ rm -R /tmp/holberton
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ less 11-lists
+➜  0x00-shell_basics git:(master) ✗ touch iamafile
+➜  0x00-shell_basics git:(master) ✗ file iamafile
+iamafile: empty 
+➜  0x00-shell_basics git:(master) ✗ rm iamafile
+➜  0x00-shell_basics git:(master) ✗ touch iamafile file iamafile
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  3-listfiles           9-firstdirdeletion
+1-listit                     4-listmorefiles       9-firstdirdeletion~
+10-back                      5-listfilesdigitonly  Betty
+10-back~                     6-firstdirectory      file
+11-lists                     7-movethatfile        iamafile
+11-lists~                    7-movethatfile~       mv
+2-bring_me_home              8-firstdelete
+2-bring_me_home~             8-firstdelete~
+➜  0x00-shell_basics git:(master) ✗ rm Betty 
+➜  0x00-shell_basics git:(master) ✗ rm iamafile  
+➜  0x00-shell_basics git:(master) ✗ rm file
+➜  0x00-shell_basics git:(master) ✗ rm mv 
+➜  0x00-shell_basics git:(master) ✗ touch 12-file_type
+➜  0x00-shell_basics git:(master) ✗ emacs 12-file_type 
+➜  0x00-shell_basics git:(master) ✗ less 12-file_type
+➜  0x00-shell_basics git:(master) ✗ ls -la
+total 64
+drwxr-xr-x 2 vagrant vagrant 4096 Jan 29 18:35 .
+drwxr-xr-x 4 vagrant vagrant 4096 Jan 29 18:26 ..
+-rwxr--r-- 1 vagrant vagrant   15 Jan 29 17:52 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 17:52 1-listit
+-rw-r--r-- 1 vagrant vagrant   16 Jan 29 18:08 10-back
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:08 10-back~
+-rw-r--r-- 1 vagrant vagrant  154 Jan 29 18:29 11-lists
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:16 11-lists~
+-rw-r--r-- 1 vagrant vagrant   25 Jan 29 18:35 12-file_type
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:34 12-file_type~
+-rw-r--r-- 1 vagrant vagrant   15 Jan 29 18:07 2-bring_me_home
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:07 2-bring_me_home~
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:53 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:53 4-listmorefiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:54 5-listfilesdigitonly
+-rwxr--r-- 1 vagrant vagrant   33 Jan 29 17:54 6-firstdirectory
+-rw-r--r-- 1 vagrant vagrant   69 Jan 29 18:28 7-movethatfile
+-rw-r--r-- 1 vagrant vagrant   40 Jan 29 18:02 7-movethatfile~
+-rw-r--r-- 1 vagrant vagrant   35 Jan 29 18:04 8-firstdelete
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:03 8-firstdelete~
+-rw-r--r-- 1 vagrant vagrant   32 Jan 29 18:06 9-firstdirdeletion
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:05 9-firstdirdeletion~
+➜  0x00-shell_basics git:(master) ✗ ln -s
+ln: missing file operand
+Try 'ln --help' for more information.
+➜  0x00-shell_basics git:(master) ✗ ln
+ln: missing file operand
+Try 'ln --help' for more information.
+➜  0x00-shell_basics git:(master) ✗ ln -s
+ln: missing file operand
+Try 'ln --help' for more information.
+➜  0x00-shell_basics git:(master) ✗ ln -s source_file myfile
+➜  0x00-shell_basics git:(master) ✗ ls -la
+total 64
+drwxr-xr-x 2 vagrant vagrant 4096 Jan 29 18:39 .
+drwxr-xr-x 4 vagrant vagrant 4096 Jan 29 18:26 ..
+-rwxr--r-- 1 vagrant vagrant   15 Jan 29 17:52 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 17:52 1-listit
+-rw-r--r-- 1 vagrant vagrant   16 Jan 29 18:08 10-back
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:08 10-back~
+-rw-r--r-- 1 vagrant vagrant  154 Jan 29 18:29 11-lists
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:16 11-lists~
+-rw-r--r-- 1 vagrant vagrant   25 Jan 29 18:35 12-file_type
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:34 12-file_type~
+-rw-r--r-- 1 vagrant vagrant   15 Jan 29 18:07 2-bring_me_home
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:07 2-bring_me_home~
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:53 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:53 4-listmorefiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:54 5-listfilesdigitonly
+-rwxr--r-- 1 vagrant vagrant   33 Jan 29 17:54 6-firstdirectory
+-rw-r--r-- 1 vagrant vagrant   69 Jan 29 18:28 7-movethatfile
+-rw-r--r-- 1 vagrant vagrant   40 Jan 29 18:02 7-movethatfile~
+-rw-r--r-- 1 vagrant vagrant   35 Jan 29 18:04 8-firstdelete
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:03 8-firstdelete~
+-rw-r--r-- 1 vagrant vagrant   32 Jan 29 18:06 9-firstdirdeletion
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:05 9-firstdirdeletion~
+lrwxrwxrwx 1 vagrant vagrant   11 Jan 29 18:39 myfile -> source_file
+➜  0x00-shell_basics git:(master) ✗ ln -s /bin/ls __ls__    
+➜  0x00-shell_basics git:(master) ✗ ls -la
+total 64
+drwxr-xr-x 2 vagrant vagrant 4096 Jan 29 18:39 .
+drwxr-xr-x 4 vagrant vagrant 4096 Jan 29 18:26 ..
+-rwxr--r-- 1 vagrant vagrant   15 Jan 29 17:52 0-current_working_directory
+-rwxr--r-- 1 vagrant vagrant   14 Jan 29 17:52 1-listit
+-rw-r--r-- 1 vagrant vagrant   16 Jan 29 18:08 10-back
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:08 10-back~
+-rw-r--r-- 1 vagrant vagrant  154 Jan 29 18:29 11-lists
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:16 11-lists~
+-rw-r--r-- 1 vagrant vagrant   25 Jan 29 18:35 12-file_type
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:34 12-file_type~
+-rw-r--r-- 1 vagrant vagrant   15 Jan 29 18:07 2-bring_me_home
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:07 2-bring_me_home~
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:53 3-listfiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:53 4-listmorefiles
+-rwxr--r-- 1 vagrant vagrant   18 Jan 29 17:54 5-listfilesdigitonly
+-rwxr--r-- 1 vagrant vagrant   33 Jan 29 17:54 6-firstdirectory
+-rw-r--r-- 1 vagrant vagrant   69 Jan 29 18:28 7-movethatfile
+-rw-r--r-- 1 vagrant vagrant   40 Jan 29 18:02 7-movethatfile~
+-rw-r--r-- 1 vagrant vagrant   35 Jan 29 18:04 8-firstdelete
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:03 8-firstdelete~
+-rw-r--r-- 1 vagrant vagrant   32 Jan 29 18:06 9-firstdirdeletion
+-rw-r--r-- 1 vagrant vagrant    0 Jan 29 18:05 9-firstdirdeletion~
+lrwxrwxrwx 1 vagrant vagrant    7 Jan 29 18:39 __ls__ -> /bin/ls
+lrwxrwxrwx 1 vagrant vagrant   11 Jan 29 18:39 myfile -> source_file
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  2-bring_me_home       8-firstdelete
+1-listit                     2-bring_me_home~      8-firstdelete~
+10-back                      3-listfiles           9-firstdirdeletion
+10-back~                     4-listmorefiles       9-firstdirdeletion~
+11-lists                     5-listfilesdigitonly  __ls__
+11-lists~                    6-firstdirectory      myfile
+12-file_type                 7-movethatfile
+12-file_type~                7-movethatfile~
+➜  0x00-shell_basics git:(master) ✗ rm myfile
+➜  0x00-shell_basics git:(master) ✗ rm __ls__
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  12-file_type~         7-movethatfile
+1-listit                     2-bring_me_home       7-movethatfile~
+10-back                      2-bring_me_home~      8-firstdelete
+10-back~                     3-listfiles           8-firstdelete~
+11-lists                     4-listmorefiles       9-firstdirdeletion
+11-lists~                    5-listfilesdigitonly  9-firstdirdeletion~
+12-file_type                 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ touch 13-symbolic_link
+➜  0x00-shell_basics git:(master) ✗ emacs 13-symbolic_link
+➜  0x00-shell_basics git:(master) ✗ cp -u *.html /home/vagrant/holberton-system_engineering-devops
+zsh: no matches found: *.html
+➜  0x00-shell_basics git:(master) ✗ cp -u *html /home/vagrant/holberton-system_engineering-devops 
+zsh: no matches found: *html
+➜  0x00-shell_basics git:(master) ✗ cp -u /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics/*.html /home/vagrant/holberton-system_engineering-devop      
+zsh: no matches found: /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics/*.html
+➜  0x00-shell_basics git:(master) ✗ cp -u *.html ..
+zsh: no matches found: *.html
+➜  0x00-shell_basics git:(master) ✗ ls ..
+0x00-shell_basics  Betty  README.md  betty  rm
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  13-symbolic_link      7-movethatfile
+1-listit                     13-symbolic_link~     7-movethatfile~
+10-back                      2-bring_me_home       8-firstdelete
+10-back~                     2-bring_me_home~      8-firstdelete~
+11-lists                     3-listfiles           9-firstdirdeletion
+11-lists~                    4-listmorefiles       9-firstdirdeletion~
+12-file_type                 5-listfilesdigitonly
+12-file_type~                6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ less 13-symbolic_link
+➜  0x00-shell_basics git:(master) ✗ touch 14-copy_html
+➜  0x00-shell_basics git:(master) ✗ emacs 14-copy_html
+➜  0x00-shell_basics git:(master) ✗ ls | grep "^[A-Z]"
+➜  0x00-shell_basics git:(master) ✗ ls | grep "^[a-z]"
+➜  0x00-shell_basics git:(master) ✗ ls |grep '^[ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+pipe quote> ls | grep '^[ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+zsh: substitution failed
+➜  0x00-shell_basics git:(master) ✗ ls | grep '^[ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+pipe quote> 1
+pipe quote> h
+pipe quote> n
+pipe quote> ls | grep '^[ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+➜  0x00-shell_basics git:(master) ✗ ls | grep '^[ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+1
+h
+n
+ls | grep 'ls |grep '^
+ls | grep 'm
+0-current_working_directory
+1-listit
+10-back
+10-back~
+11-lists
+11-lists~
+12-file_type
+12-file_type~
+13-symbolic_link
+13-symbolic_link~
+14-copy_html
+14-copy_html~
+2-bring_me_home
+2-bring_me_home~
+5-listfilesdigitonly
+7-movethatfile
+7-movethatfile~
+9-firstdirdeletion
+9-firstdirdeletion~
+➜  0x00-shell_basics git:(master) ✗ ls -d
+.
+➜  0x00-shell_basics git:(master) ✗ ls -d /etc/{,.}*[[:upper:]]*
+zsh: no matches found: /etc/.*[[:upper:]]*
+➜  0x00-shell_basics git:(master) ✗ mv *[[:upper:]]* /tmp/u
+zsh: no matches found: *[[:upper:]]*
+➜  0x00-shell_basics git:(master) ✗ touch 15-lets_move
+➜  0x00-shell_basics git:(master) ✗ emacs 15-lets_move
+➜  0x00-shell_basics git:(master) ✗ rm *~
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html          6-firstdirectory
+1-listit                     15-lets_move          7-movethatfile
+10-back                      2-bring_me_home       8-firstdelete
+11-lists                     3-listfiles           9-firstdirdeletion
+12-file_type                 4-listmorefiles
+13-symbolic_link             5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ touch 16-clean_emacs
+➜  0x00-shell_basics git:(master) ✗ emacs 16-clean_emacs
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html     4-listmorefiles
+1-listit                     15-lets_move     5-listfilesdigitonly
+10-back                      16-clean_emacs   6-firstdirectory
+11-lists                     16-clean_emacs~  7-movethatfile
+12-file_type                 2-bring_me_home  8-firstdelete
+13-symbolic_link             3-listfiles      9-firstdirdeletion
+➜  0x00-shell_basics git:(master) ✗ rm *~
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html     5-listfilesdigitonly
+1-listit                     15-lets_move     6-firstdirectory
+10-back                      16-clean_emacs   7-movethatfile
+11-lists                     2-bring_me_home  8-firstdelete
+12-file_type                 3-listfiles      9-firstdirdeletion
+13-symbolic_link             4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ mkdir welcome/ mkdir welcome/to/ mkdir welcome/to/holberton
+mkdir: cannot create directory 'mkdir': File exists
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move          7-movethatfile
+1-listit                     16-clean_emacs        8-firstdelete
+10-back                      2-bring_me_home       9-firstdirdeletion
+11-lists                     3-listfiles           mkdir
+12-file_type                 4-listmorefiles       welcome
+13-symbolic_link             5-listfilesdigitonly
+14-copy_html                 6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ rm -R mkdir
+➜  0x00-shell_basics git:(master) ✗ rm -R w*
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html     5-listfilesdigitonly
+1-listit                     15-lets_move     6-firstdirectory
+10-back                      16-clean_emacs   7-movethatfile
+11-lists                     2-bring_me_home  8-firstdelete
+12-file_type                 3-listfiles      9-firstdirdeletion
+13-symbolic_link             4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ mkdir /1/ mkdir /2/
+mkdir: cannot create directory '/1/': Permission denied
+mkdir: cannot create directory '/2/': Permission denied
+➜  0x00-shell_basics git:(master) ✗ mkdir 1/ mkdir /2
+mkdir: cannot create directory 'mkdir': File exists
+mkdir: cannot create directory '/2': Permission denied
+➜  0x00-shell_basics git:(master) ✗ mkdir /1 mkdir /2
+mkdir: cannot create directory '/1': Permission denied
+mkdir: cannot create directory 'mkdir': File exists
+mkdir: cannot create directory '/2': Permission denied
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html          6-firstdirectory
+1                            15-lets_move          7-movethatfile
+1-listit                     16-clean_emacs        8-firstdelete
+10-back                      2-bring_me_home       9-firstdirdeletion
+11-lists                     3-listfiles           mkdir
+12-file_type                 4-listmorefiles
+13-symbolic_link             5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ rm -R mkdir
+➜  0x00-shell_basics git:(master) ✗ mkdir -p welcome/to/holberton
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html          6-firstdirectory
+1                            15-lets_move          7-movethatfile
+1-listit                     16-clean_emacs        8-firstdelete
+10-back                      2-bring_me_home       9-firstdirdeletion
+11-lists                     3-listfiles           welcome
+12-file_type                 4-listmorefiles
+13-symbolic_link             5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ cd welcome 
+➜  welcome git:(master) ✗ ls
+to
+➜  welcome git:(master) ✗ cd -
+~/holberton-system_engineering-devops/0x00-shell_basics
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html          6-firstdirectory
+1                            15-lets_move          7-movethatfile
+1-listit                     16-clean_emacs        8-firstdelete
+10-back                      2-bring_me_home       9-firstdirdeletion
+11-lists                     3-listfiles           welcome
+12-file_type                 4-listmorefiles
+13-symbolic_link             5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ rm -R welcome 
+➜  0x00-shell_basics git:(master) ✗ touch 17-tree
+➜  0x00-shell_basics git:(master) ✗ emacs 17-tree
+➜  0x00-shell_basics git:(master) ✗ ls -cm         
+17-tree, 17-tree~, 1, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ touch .al
+➜  0x00-shell_basics git:(master) ✗ ls -cm
+17-tree, 17-tree~, 1, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html     4-listmorefiles
+1                            15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     17-tree~         8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+➜  0x00-shell_basics git:(master) ✗ rm .al
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  14-copy_html     4-listmorefiles
+1                            15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     17-tree~         8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+➜  0x00-shell_basics git:(master) ✗ rm -R 1
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     17-tree~         8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ touch .ahdgasdhgawud
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     17-tree~         8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ rm .ahdgasdhgawud
+➜  0x00-shell_basics git:(master) ✗ ls -c
+17-tree           12-file_type        5-listfilesdigitonly
+17-tree~          7-movethatfile      4-listmorefiles
+16-clean_emacs    10-back             3-listfiles
+15-lets_move      2-bring_me_home     1-listit
+14-copy_html      9-firstdirdeletion  0-current_working_directory
+11-lists          8-firstdelete
+13-symbolic_link  6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ ls -cm ./ ../
+./:
+17-tree, 17-tree~, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+
+../:
+0x00-shell_basics, Betty, rm, betty, README.md
+➜  0x00-shell_basics git:(master) ✗ ls -cm 
+17-tree, 17-tree~, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ ls .cm /
+ls: cannot access .cm: No such file or directory
+/:
+bin   home            lib64       opt   sbin  usr      vmlinuz.old
+boot  initrd.img      lost+found  proc  srv   vagrant
+dev   initrd.img.old  media       root  sys   var
+etc   lib             mnt         run   tmp   vmlinuz
+➜  0x00-shell_basics git:(master) ✗ ls -cm /
+dev, tmp, vagrant, run, bin, etc, sys, proc, var, root, home, lib, sbin,
+vmlinuz, vmlinuz.old, usr, srv, lib64, media, mnt, opt, initrd.img,
+initrd.img.old, boot, lost+found
+➜  0x00-shell_basics git:(master) ✗ ls -cm
+17-tree, 17-tree~, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ ls -cm ./
+17-tree, 17-tree~, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ ls -cm ../
+0x00-shell_basics, Betty, rm, betty, README.md
+➜  0x00-shell_basics git:(master) ✗ ls -cm
+17-tree, 17-tree~, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ touch ..
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     17-tree~         8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ ls -cm
+17-tree, 17-tree~, 16-clean_emacs, 15-lets_move, 14-copy_html, 11-lists,
+13-symbolic_link, 12-file_type, 7-movethatfile, 10-back, 2-bring_me_home,
+9-firstdirdeletion, 8-firstdelete, 6-firstdirectory, 5-listfilesdigitonly,
+4-listmorefiles, 3-listfiles, 1-listit, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ✗ ls -m
+0-current_working_directory, 1-listit, 10-back, 11-lists, 12-file_type,
+13-symbolic_link, 14-copy_html, 15-lets_move, 16-clean_emacs, 17-tree, 17-tree~,
+2-bring_me_home, 3-listfiles, 4-listmorefiles, 5-listfilesdigitonly,
+6-firstdirectory, 7-movethatfile, 8-firstdelete, 9-firstdirdeletion
+➜  0x00-shell_basics git:(master) ✗ ls -c
+17-tree           12-file_type        5-listfilesdigitonly
+17-tree~          7-movethatfile      4-listmorefiles
+16-clean_emacs    10-back             3-listfiles
+15-lets_move      2-bring_me_home     1-listit
+14-copy_html      9-firstdirdeletion  0-current_working_directory
+11-lists          8-firstdelete
+13-symbolic_link  6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ ls .*
+zsh: no matches found: .*
+➜  0x00-shell_basics git:(master) ✗ ls ..*
+zsh: no matches found: ..*
+➜  0x00-shell_basics git:(master) ✗ mkdir hola
+➜  0x00-shell_basics git:(master) ✗ ls -m
+0-current_working_directory, 1-listit, 10-back, 11-lists, 12-file_type,
+13-symbolic_link, 14-copy_html, 15-lets_move, 16-clean_emacs, 17-tree, 17-tree~,
+2-bring_me_home, 3-listfiles, 4-listmorefiles, 5-listfilesdigitonly,
+6-firstdirectory, 7-movethatfile, 8-firstdelete, 9-firstdirdeletion, hola
+➜  0x00-shell_basics git:(master) ✗ touch 18-commas
+➜  0x00-shell_basics git:(master) ✗ emacs 18-commas
+➜  0x00-shell_basics git:(master) ✗ ls -m
+0-current_working_directory, 1-listit, 10-back, 11-lists, 12-file_type,
+13-symbolic_link, 14-copy_html, 15-lets_move, 16-clean_emacs, 17-tree, 17-tree~,
+18-commas, 18-commas~, 2-bring_me_home, 3-listfiles, 4-listmorefiles,
+5-listfilesdigitonly, 6-firstdirectory, 7-movethatfile, 8-firstdelete,
+9-firstdirdeletion, hola
+➜  0x00-shell_basics git:(master) ✗ rm -R hola
+➜  0x00-shell_basics git:(master) ✗ rm *~
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     18-commas        8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 3-listfiles 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 5-listfilesdigitonly 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 6-firstdirectory 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 7-movethatfile 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 8-firstdelete 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 9
+chmod: cannot access '9': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 9-firstdirdeletion 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 10-back 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 11-lists 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 12-file_type 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 13-symbolic_link 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 14-copy_html 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 15-lets_move 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 16-clean_emacs 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 17-tree 
+➜  0x00-shell_basics git:(master) ✗ chmod u+x 18-commas 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     18-commas        8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ c -
+zsh: command not found: c
+➜  0x00-shell_basics git:(master) ✗ cd - 
+cd: no such file or directory: /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics/welcome
+➜  0x00-shell_basics git:(master) ✗ cd -
+cd: no such file or directory: /home/vagrant/holberton-system_engineering-devops/0x00-shell_basics/welcome
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics/
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "update 2"
+[master 126a01a] update 2
+ 19 files changed, 38 insertions(+)
+ create mode 100755 0x00-shell_basics/0-current_working_directory
+ create mode 100755 0x00-shell_basics/1-listit
+ create mode 100755 0x00-shell_basics/10-back
+ create mode 100755 0x00-shell_basics/11-lists
+ create mode 100755 0x00-shell_basics/12-file_type
+ create mode 100755 0x00-shell_basics/13-symbolic_link
+ create mode 100755 0x00-shell_basics/14-copy_html
+ create mode 100755 0x00-shell_basics/15-lets_move
+ create mode 100755 0x00-shell_basics/16-clean_emacs
+ create mode 100755 0x00-shell_basics/17-tree
+ create mode 100755 0x00-shell_basics/18-commas
+ create mode 100755 0x00-shell_basics/2-bring_me_home
+ create mode 100755 0x00-shell_basics/3-listfiles
+ create mode 100755 0x00-shell_basics/4-listmorefiles
+ create mode 100755 0x00-shell_basics/5-listfilesdigitonly
+ create mode 100755 0x00-shell_basics/6-firstdirectory
+ create mode 100755 0x00-shell_basics/7-movethatfile
+ create mode 100755 0x00-shell_basics/8-firstdelete
+ create mode 100755 0x00-shell_basics/9-firstdirdeletion
+➜  holberton-system_engineering-devops git:(master) ✗ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  Betty
+  betty
+  rm
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  holberton-system_engineering-devops git:(master) ✗ rm betty 
+➜  holberton-system_engineering-devops git:(master) ✗ rm Betty 
+➜  holberton-system_engineering-devops git:(master) ✗ rm rm 
+➜  holberton-system_engineering-devops git:(master) git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 23, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (22/22), 1.62 KiB | 0 bytes/s, done.
+Total 22 (delta 0), reused 0 (delta 0)
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   e67231a..126a01a  master -> master
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) emacs 0-current_working_directory 
+➜  0x00-shell_basics git:(master) ✗ git add 0-current_working_directory 
+➜  0x00-shell_basics git:(master) ✗ git commit -m "error"
+[master 83f471b] error
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  0x00-shell_basics git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 367 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   126a01a..83f471b  master -> master
+➜  0x00-shell_basics git:(master) ./0-current_working_directory 
+/home/vagrant/holberton-system_engineering-devops/0x00-shell_basics
+➜  0x00-shell_basics git:(master) cd
+➜  ~ git:(master) ✗ rm -rf holberton-system_engineering-devops
+➜  ~ git:(master) ✗ git clone https://github.com/juandsuarezz/holberton-system_enginering-devops.git
+Cloning into 'holberton-system_enginering-devops'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 29 (delta 1), reused 29 (delta 1), pack-reused 0
+Unpacking objects: 100% (29/29), done.
+Checking connectivity... done.
+➜  ~ git:(master) ✗ cd
+➜  ~ git:(master) ✗ ls
+#Vagrantfile#  boom                                holbertonschool-zero_day
+README.md      holberton-system_enginering-devops
+➜  ~ git:(master) ✗ rm -rf holberton-system_enginering-devops 
+➜  ~ git:(master) ✗ ls
+#Vagrantfile#  README.md  boom  holbertonschool-zero_day
+➜  ~ git:(master) ✗ git clone https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+Cloning into 'holberton-system_engineering-devops'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 29 (delta 1), reused 29 (delta 1), pack-reused 0
+Unpacking objects: 100% (29/29), done.
+Checking connectivity... done.
+➜  ~ git:(master) ✗ ls
+#Vagrantfile#  boom                                 holbertonschool-zero_day
+README.md      holberton-system_engineering-devops
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master)                     
+cd 0x*
+➜  0x00-shell_basics git:(master) ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     18-commas        8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) touch README.md 
+➜  0x00-shell_basics git:(master) ✗ emacs README.md 
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     18-commas        8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles      README.md
+14-copy_html                 4-listmorefiles  README.md~
+➜  0x00-shell_basics git:(master) ✗ rm *~
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     18-commas        8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles      README.md
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) ✗ cd -
+~/holberton-system_engineering-devops
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "update 3"
+[master 2843da0] update 3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 0x00-shell_basics/README.md
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 6, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 375 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   83f471b..2843da0  master -> master
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ls
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     18-commas        8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles      README.md
+14-copy_html                 4-listmorefiles
+➜  0x00-shell_basics git:(master) ls    
+0-current_working_directory  15-lets_move     5-listfilesdigitonly
+1-listit                     16-clean_emacs   6-firstdirectory
+10-back                      17-tree          7-movethatfile
+11-lists                     18-commas        8-firstdelete
+12-file_type                 2-bring_me_home  9-firstdirdeletion
+13-symbolic_link             3-listfiles      README.md
+14-copy_html                 4-list➜  ➜  ➜  0x0➜ ➜  0x00-➜  0➜  0x➜  ➜  0x0➜➜ ➜ ➜  0➜➜ ➜➜➜  ➜ ➜  0x0➜ ➜  ➜➜➜➜➜➜➜➜  ➜ ➜  0x➜ ➜ ➜➜➜➜➜➜➜➜➜➜➜➜➜➜ ➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜ ➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜  0➜  0x0➜  ➜  0x00-she➜  ➜  0x0➜➜➜➜ ➜➜  ➜ ➜➜ ➜➜➜➜➜➜ ➜ ➜➜➜➜➜➜➜➜➜➜ ➜➜➜➜  0x00-shell_basics git:(master) ls
+0-current_working_directory  10-back   12-file_type      14-copy_html  16-clean_emacs  18-commas        3-listfiles      5-listfilesdigitonly  7-movethatfile  9-firstdirdeletion
+1-listit                     11-lists  13-symbolic_link  15-lets_move  17-tree         2-bring_me_home  4-listmorefiles  6-firstdirectory      8-firstdelete   README.md
+➜  0x00-shell_basics git:(master) ./1-listit 
+0-current_working_directory  13-symbolic_link  18-commas	     6-firstdirectory
+1-listit		     		            14-copy_html      2-bring_me_home	     7-movethatfile
+10-back						    		      			          15-lets_move      3-listfiles      8-firstdelete
+11-lists											  		         16-clean_emacs    4-listmorefiles      9-firstdirdeletion
+12-file_type														 		        17-tree		       5-listfilesdigitonly  README.md
+➜  0x00-shell_basics git:(master) ./3-listfiles 
+total 80
+-rwxr-xr-x 1 vagrant vagrant  16 Jan 29 19:34 0-current_working_directory
+-rwxr-xr-x 1 vagrant vagrant  14 Jan 29 19:34 1-listit
+-rwxr-xr-x 1 vagrant vagrant  16 Jan 29 19:34 10-back
+-rwxr-xr-x 1 vagrant vagrant 108 Jan 29 19:34 11-lists
+-rwxr-xr-x 1 vagrant vagrant  25 Jan 29 19:34 12-file_type
+-rwxr-xr-x 1 vagrant vagrant  32 Jan 29 19:34 13-symbolic_link
+-rwxr-xr-x 1 vagrant vagrant  27 Jan 29 19:34 14-copy_html
+-rwxr-xr-x 1 vagrant vagrant  35 Jan 29 19:34 15-lets_move
+-rwxr-xr-x 1 vagrant vagrant  17 Jan 29 19:34 16-clean_emacs
+-rwxr-xr-x 1 vagrant vagrant  41 Jan 29 19:34 17-tree
+-rwxr-xr-x 1 vagrant vagrant  17 Jan 29 19:34 18-commas
+-rwxr-xr-x 1 vagrant vagrant  15 Jan 29 19:34 2-bring_me_home
+-rwxr-xr-x 1 vagrant vagrant  18 Jan 29 19:34 3-listfiles
+-rwxr-xr-x 1 vagrant vagrant  18 Jan 29 19:34 4-listmorefiles
+-rwxr-xr-x 1 vagrant vagrant  18 Jan 29 19:34 5-listfilesdigitonly
+-rwxr-xr-x 1 vagrant vagrant  33 Jan 29 19:34 6-firstdirectory
+-rwxr-xr-x 1 vagrant vagrant  69 Jan 29 19:34 7-movethatfile
+-rwxr-xr-x 1 vagrant vagrant  35 Jan 29 19:34 8-firstdelete
+-rwxr-xr-x 1 vagrant vagrant  32 Jan 29 19:34 9-firstdirdeletion
+-rw-r--r-- 1 vagrant vagrant  11 Jan 29 19:41 README.md
+➜  0x00-shell_basics git:(master) ./4-listmorefiles 
+total 88
+drwxr-xr-x 2 vagrant vagrant 4096 Jan 29 19:42 .
+drwxr-xr-x 4 vagrant vagrant 4096 Jan 29 19:34 ..
+-rwxr-xr-x 1 vagrant vagrant   16 Jan 29 19:34 0-current_working_directory
+-rwxr-xr-x 1 vagrant vagrant   14 Jan 29 19:34 1-listit
+-rwxr-xr-x 1 vagrant vagrant   16 Jan 29 19:34 10-back
+-rwxr-xr-x 1 vagrant vagrant  108 Jan 29 19:34 11-lists
+-rwxr-xr-x 1 vagrant vagrant   25 Jan 29 19:34 12-file_type
+-rwxr-xr-x 1 vagrant vagrant   32 Jan 29 19:34 13-symbolic_link
+-rwxr-xr-x 1 vagrant vagrant   27 Jan 29 19:34 14-copy_html
+-rwxr-xr-x 1 vagrant vagrant   35 Jan 29 19:34 15-lets_move
+-rwxr-xr-x 1 vagrant vagrant   17 Jan 29 19:34 16-clean_emacs
+-rwxr-xr-x 1 vagrant vagrant   41 Jan 29 19:34 17-tree
+-rwxr-xr-x 1 vagrant vagrant   17 Jan 29 19:34 18-commas
+-rwxr-xr-x 1 vagrant vagrant   15 Jan 29 19:34 2-bring_me_home
+-rwxr-xr-x 1 vagrant vagrant   18 Jan 29 19:34 3-listfiles
+-rwxr-xr-x 1 vagrant vagrant   18 Jan 29 19:34 4-listmorefiles
+-rwxr-xr-x 1 vagrant vagrant   18 Jan 29 19:34 5-listfilesdigitonly
+-rwxr-xr-x 1 vagrant vagrant   33 Jan 29 19:34 6-firstdirectory
+-rwxr-xr-x 1 vagrant vagrant   69 Jan 29 19:34 7-movethatfile
+-rwxr-xr-x 1 vagrant vagrant   35 Jan 29 19:34 8-firstdelete
+-rwxr-xr-x 1 vagrant vagrant   32 Jan 29 19:34 9-firstdirdeletion
+-rw-r--r-- 1 vagrant vagrant   11 Jan 29 19:41 README.md
+➜  0x00-shell_basics git:(master) ./5-listfilesdigitonly 
+total 88
+drwxr-xr-x 2 1000 1000 4096 Jan 29 19:42 .
+drwxr-xr-x 4 1000 1000 4096 Jan 29 19:34 ..
+-rwxr-xr-x 1 1000 1000   16 Jan 29 19:34 0-current_working_directory
+-rwxr-xr-x 1 1000 1000   14 Jan 29 19:34 1-listit
+-rwxr-xr-x 1 1000 1000   16 Jan 29 19:34 10-back
+-rwxr-xr-x 1 1000 1000  108 Jan 29 19:34 11-lists
+-rwxr-xr-x 1 1000 1000   25 Jan 29 19:34 12-file_type
+-rwxr-xr-x 1 1000 1000   32 Jan 29 19:34 13-symbolic_link
+-rwxr-xr-x 1 1000 1000   27 Jan 29 19:34 14-copy_html
+-rwxr-xr-x 1 1000 1000   35 Jan 29 19:34 15-lets_move
+-rwxr-xr-x 1 1000 1000   17 Jan 29 19:34 16-clean_emacs
+-rwxr-xr-x 1 1000 1000   41 Jan 29 19:34 17-tree
+-rwxr-xr-x 1 1000 1000   17 Jan 29 19:34 18-commas
+-rwxr-xr-x 1 1000 1000   15 Jan 29 19:34 2-bring_me_home
+-rwxr-xr-x 1 1000 1000   18 Jan 29 19:34 3-listfiles
+-rwxr-xr-x 1 1000 1000   18 Jan 29 19:34 4-listmorefiles
+-rwxr-xr-x 1 1000 1000   18 Jan 29 19:34 5-listfilesdigitonly
+-rwxr-xr-x 1 1000 1000   33 Jan 29 19:34 6-firstdirectory
+-rwxr-xr-x 1 1000 1000   69 Jan 29 19:34 7-movethatfile
+-rwxr-xr-x 1 1000 1000   35 Jan 29 19:34 8-firstdelete
+-rwxr-xr-x 1 1000 1000   32 Jan 29 19:34 9-firstdirdeletion
+-rw-r--r-- 1 1000 1000   11 Jan 29 19:41 README.md
+➜  0x00-shell_basics git:(master) ./6
+zsh: no such file or directory: ./6
+➜  0x00-shell_basics git:(master) ./6-firstdirectory 
+➜  0x00-shell_basics git:(master) ./7-movethatfile 
+➜  0x00-shell_basics git:(master) ✗ ./8
+zsh: no such file or directory: ./8
+➜  0x00-shell_basics git:(master) ✗ ./8-firstdelete 
+rm: cannot remove '/tmp/holberton/betty': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ ./9-firstdirdeletion 
+➜  0x00-shell_basics git:(master) ✗ ./10-back 
+./10-back: line 2: cd: OLDPWD not set
+➜  0x00-shell_basics git:(master) ✗ emacs 10-back 
+➜  0x00-shell_basics git:(master) ✗ ./1-listit 
+0-current_working_directory  13-symbolic_link  18-commas	     6-firstdirectory	 README.md
+1-listit		     		            14-copy_html      2-bring_me_home	      7-movethatfile	 mv
+10-back						    		      			           15-lets_move      3-listfiles      8-firstdelete
+11-lists											   		          16-clean_emacs    4-listmorefiles      9-firstdirdeletion
+12-file_type														  		         17-tree	        5-listfilesdigitonly  Betty
+➜  0x00-shell_basics git:(master) ✗ ls
+0-current_working_directory  13-symbolic_link  18-commas             6-firstdirectory    README.md
+1-listit                     14-copy_html      2-bring_me_home       7-movethatfile      mv
+10-back                      15-lets_move      3-listfiles           8-firstdelete
+11-lists                     16-clean_emacs    4-listmorefiles       9-firstdirdeletion
+12-file_type                 17-tree           5-listfilesdigitonly  Betty
+➜  0x00-shell_basics git:(master) ✗ rm mv
+➜  0x00-shell_basics git:(master) ✗ rm betty
+rm: cannot remove 'betty': No such file or directory
+➜  0x00-shell_basics git:(master) ✗ emacs 2-bring_me_home 
+➜  0x00-shell_basics git:(master) ✗ emacs 3-listfiles 
+➜  0x00-shell_basics git:(master) ✗ emacs 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ less 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ emacs 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ less 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ emacs 4-listmorefiles 
+➜  0x00-shell_basics git:(master) ✗ emacs 5-listfilesdigitonly 
+➜  0x00-shell_basics git:(master) ✗ emacs 6-firstdirectory 
+➜  0x00-shell_basics git:(master) ✗ emacs 7-movethatfile 
+➜  0x00-shell_basics git:(master) ✗ emacs 8-firstdelete 
+➜  0x00-shell_basics git:(master) ✗ emacs 9-firstdirdeletion 
+➜  0x00-shell_basics git:(master) ✗ emacs 10-back 
+➜  0x00-shell_basics git:(master) ✗ emacs 1-listit 
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ emacs 12-file_type 
+➜  0x00-shell_basics git:(master) ✗ emacs 13-symbolic_link 
+➜  0x00-shell_basics git:(master) ✗ emacs 14-copy_html 
+➜  0x00-shell_basics git:(master) ✗ emacs 15-lets_move 
+➜  0x00-shell_basics git:(master) ✗ emacs 16-clean_emacs 
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ emacs 17-tree 
+➜  0x00-shell_basics git:(master) ✗ emacs 18-commas 
+➜  0x00-shell_basics git:(master) ✗ ls
+#4-listmorefiles#            12-file_type      17-tree          5-listfilesdigitonly  Betty
+0-current_working_directory  13-symbolic_link  18-commas        6-firstdirectory      README.md
+1-listit                     14-copy_html      2-bring_me_home  7-movethatfile
+10-back                      15-lets_move      3-listfiles      8-firstdelete
+11-lists                     16-clean_emacs    4-listmorefiles  9-firstdirdeletion
+➜  0x00-shell_basics git:(master) ✗ rm Betty
+➜  0x00-shell_basics git:(master) ✗ ls
+#4-listmorefiles#            12-file_type      17-tree          5-listfilesdigitonly  README.md
+0-current_working_directory  13-symbolic_link  18-commas        6-firstdirectory
+1-listit                     14-copy_html      2-bring_me_home  7-movethatfile
+10-back                      15-lets_move      3-listfiles      8-firstdelete
+11-lists                     16-clean_emacs    4-listmorefiles  9-firstdirdeletion
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics/
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "upddate 4"
+[master 56f0eda] upddate 4
+ 17 files changed, 18 insertions(+), 15 deletions(-)
+ create mode 100755 0x00-shell_basics/#4-listmorefiles#
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 37, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (19/19), 1.53 KiB | 0 bytes/s, done.
+Total 19 (delta 0), reused 0 (delta 0)
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   2843da0..56f0eda  master -> master
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) ls
+#4-listmorefiles#            12-file_type      17-tree          5-listfilesdigitonly  README.md
+0-current_working_directory  13-symbolic_link  18-commas        6-firstdirectory
+1-listit                     14-copy_html      2-bring_me_home  7-movethatfile
+10-back                      15-lets_move      3-listfiles      8-firstdelete
+11-lists                     16-clean_emacs    4-listmorefiles  9-firstdirdeletion
+➜  0x00-shell_basics git:(master) emacs 7-movethatfile  
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ emacs 12-file_type 
+➜  0x00-shell_basics git:(master) ✗ emacs 15-lets_move 
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics/
+➜  holberton-system_engineering-devops git:(master) ✗ 
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "update 2 2.0"
+[master a66953d] update 2 2.0
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 11, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 532 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   56f0eda..a66953d  master -> master
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) emacs 17-tree 
+➜  0x00-shell_basics git:(master) emacs 18-commas 
+➜  0x00-shell_basics git:(master) ls -m
+#4-listmorefiles#, 0-current_working_directory, 1-listit, 10-back, 11-lists, 12-file_type,
+13-symbolic_link, 14-copy_html, 15-lets_move, 16-clean_emacs, 17-tree, 18-commas, 2-bring_me_home,
+3-listfiles, 4-listmorefiles, 5-listfilesdigitonly, 6-firstdirectory, 7-movethatfile,
+8-firstdelete, 9-firstdirdeletion, README.md
+➜  0x00-shell_basics git:(master) ls -cm
+12-file_type, 11-lists, 7-movethatfile, 18-commas, 17-tree, 16-clean_emacs, 15-lets_move,
+14-copy_html, 13-symbolic_link, 1-listit, 10-back, 9-firstdirdeletion, 8-firstdelete,
+6-firstdirectory, 5-listfilesdigitonly, #4-listmorefiles#, 4-listmorefiles, 3-listfiles,
+2-bring_me_home, README.md, 0-current_working_directory
+➜  0x00-shell_basics git:(master) ls -ma
+#4-listmorefiles#, ., .., 0-current_working_directory, 1-listit, 10-back, 11-lists, 12-file_type,
+13-symbolic_link, 14-copy_html, 15-lets_move, 16-clean_emacs, 17-tree, 18-commas, 2-bring_me_home,
+3-listfiles, 4-listmorefiles, 5-listfilesdigitonly, 6-firstdirectory, 7-movethatfile,
+8-firstdelete, 9-firstdirdeletion, README.md
+➜  0x00-shell_basics git:(master) ls m-c
+ls: cannot access m-c: No such file or directory
+➜  0x00-shell_basics git:(master) emacs 18-commas 
+➜  0x00-shell_basics git:(master) ✗ cd
+➜  ~ git:(master) ✗ cd holberton-system_engineering-devops 
+➜  holberton-system_engineering-devops git:(master) ✗ ls
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ✗ git add 0x00-shell_basics/
+➜  holberton-system_engineering-devops git:(master) ✗ git commit -m "proupdate"
+[master 40be3b8] proupdate
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  holberton-system_engineering-devops git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 371 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   a66953d..40be3b8  master -> master
+➜  holberton-system_engineering-devops git:(master) ls-ma
+zsh: command not found: ls-ma
+➜  holberton-system_engineering-devops git:(master) ls-mn
+zsh: command not found: ls-mn
+➜  holberton-system_engineering-devops git:(master) ls -ma
+., .., .git, 0x00-shell_basics, README.md
+➜  holberton-system_engineering-devops git:(master) ls -d
+.
+➜  holberton-system_engineering-devops git:(master) ls -o
+total 8
+drwxr-xr-x 2 vagrant 4096 Jan 29 20:18 0x00-shell_basics
+-rw-r--r-- 1 vagrant   38 Jan 29 19:34 README.md
+➜  holberton-system_engineering-devops git:(master) ls -md
+.
+➜  holberton-system_engineering-devops git:(master) ls -mf
+README.md, .., 0x00-shell_basics, .git, .
+➜  holberton-system_engineering-devops git:(master) ls -ma
+., .., .git, 0x00-shell_basics, README.md
+➜  holberton-system_engineering-devops git:(master) ls -u
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ls -q
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ls -w
+ls: option requires an argument -- 'w'
+Try 'ls --help' for more information.
+➜  holberton-system_engineering-devops git:(master) ls -e
+ls: invalid option -- 'e'
+Try 'ls --help' for more information.
+➜  holberton-system_engineering-devops git:(master) ls 0r
+ls: cannot access 0r: No such file or directory
+➜  holberton-system_engineering-devops git:(master) ls -r
+README.md  0x00-shell_basics
+➜  holberton-system_engineering-devops git:(master) ls -t
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ls -y
+ls: invalid option -- 'y'
+Try 'ls --help' for more information.
+➜  holberton-system_engineering-devops git:(master) ls -y
+ls: invalid option -- 'y'
+Try 'ls --help' for more information.
+➜  holberton-system_engineering-devops git:(master) ls -u
+0x00-shell_basics  README.md
+➜  holberton-system_engineering-devops git:(master) ls -i
+270117 0x00-shell_basics  270137 README.md
+➜  holberton-system_engineering-devops git:(master) ls -o
+total 8
+drwxr-xr-x 2 vagrant 4096 Jan 29 20:18 0x00-shell_basics
+-rw-r--r-- 1 vagrant   38 Jan 29 19:34 README.md
+➜  holberton-system_engineering-devops git:(master) ls -p
+0x00-shell_basics/  README.md
+➜  holberton-system_engineering-devops git:(master) ls -amp
+./, ../, .git/, 0x00-shell_basics/, README.md
+➜  holberton-system_engineering-devops git:(master) cd 0x00-shell_basics 
+➜  0x00-shell_basics git:(master) emacs 18-commas 
+➜  0x00-shell_basics git:(master) ✗ git add 18-commas 
+➜  0x00-shell_basics git:(master) ✗ git commit "update 18"
+error: pathspec 'update 18' did not match any file(s) known to git.
+➜  0x00-shell_basics git:(master) ✗ git commit -m "uptade 18"
+[master 62346a7] uptade 18
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  0x00-shell_basics git:(master) git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 375 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   40be3b8..62346a7  master -> master
+➜  0x00-shell_basics git:(master) emacs 15-lets_move 
+➜  0x00-shell_basics git:(master) ✗ emacs 15-lets_move 
+➜  0x00-shell_basics git:(master) ✗ git add 15-lets_move 
+➜  0x00-shell_basics git:(master) ✗ git commit -m "update 2"
+[master c2eee0d] update 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  0x00-shell_basics git:(master) ✗ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 387 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   62346a7..c2eee0d  master -> master
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git add 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git commit -m "up date"
+[master 00d3f1b] up date
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  0x00-shell_basics git:(master) ✗ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 382 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   c2eee0d..00d3f1b  master -> master
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ less 11-lists 
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git add 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git commit -m "update 2.0"
+[master 0a27509] update 2.0
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  0x00-shell_basics git:(master) ✗ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 383 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   00d3f1b..0a27509  master -> master
+➜  0x00-shell_basics git:(master) ✗ emacs 11
+➜  0x00-shell_basics git:(master) ✗ ls
+#15-lets_move#               11-lists          17-tree               6-firstdirectory
+#4-listmorefiles#            12-file_type      18-commas             7-movethatfile
+0-current_working_directory  13-symbolic_link  2-bring_me_home       8-firstdelete
+1-listit                     14-copy_html      3-listfiles           9-firstdirdeletion
+10-back                      15-lets_move      4-listmorefiles       README.md
+11                           16-clean_emacs    5-listfilesdigitonly
+➜  0x00-shell_basics git:(master) ✗ rm 11
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git add 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git commit -m "final version"
+[master 2d2cd50] final version
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  0x00-shell_basics git:(master) ✗ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+juUsername for 'https://github.com'juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 386 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   0a27509..2d2cd50  master -> master
+➜  0x00-shell_basics git:(master) ✗ emacs 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git add 11-lists 
+➜  0x00-shell_basics git:(master) ✗ git commit -m "final version"
+[master ef89859] final version
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  0x00-shell_basics git:(master) ✗ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': juandsuarezz
+Password for 'https://juandsuarezz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 385 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandsuarezz/holberton-system_engineering-devops.git
+   2d2cd50..ef89859  master -> master
+➜  0x00-shell_basics git:(master) ✗ ls
+#15-lets_move#               12-file_type      18-commas             7-movethatfile
+#4-listmorefiles#            13-symbolic_link  2-bring_me_home       8-firstdelete
+0-current_working_directory  14-copy_html      3-listfiles           9-firstdirdeletion
+1-listit                     15-lets_move      4-listmorefiles       README.md
+10-back                      16-clean_emacs    5-listfilesdigitonly
+11-lists                     17-tree           6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ touch holberton.mgc
+➜  0x00-shell_basics git:(master) ✗ ls
+#15-lets_move#               12-file_type      18-commas             7-movethatfile
+#4-listmorefiles#            13-symbolic_link  2-bring_me_home       8-firstdelete
+0-current_working_directory  14-copy_html      3-listfiles           9-firstdirdeletion
+1-listit                     15-lets_move      4-listmorefiles       README.md
+10-back                      16-clean_emacs    5-listfilesdigitonly  holberton.mgc
+11-lists                     17-tree           6-firstdirectory
+➜  0x00-shell_basics git:(master) ✗ file holberton.mgc
+holberton.mgc: empty 
+➜  0x00-shell_basics git:(master) ✗ cp /bin/ls .
+➜  0x00-shell_basics git:(master) ✗ ls -la
+total 204
+-rwxr-xr-x 1 vagrant vagrant     35 Jan 29 20:33 #15-lets_move#
+-rwxr-xr-x 1 vagrant vagrant     18 Jan 29 19:58 #4-listmorefiles#
+drwxr-xr-x 2 vagrant vagrant   4096 Jan 29 20:52 .
+drwxr-xr-x 4 vagrant vagrant   4096 Jan 29 19:34 ..
+-rwxr-xr-x 1 vagrant vagrant     16 Jan 29 19:34 0-current_working_directory
+-rwxr-xr-x 1 vagrant vagrant     15 Jan 29 20:00 1-listit
+-rwxr-xr-x 1 vagrant vagrant     17 Jan 29 20:00 10-back
+-rwxr-xr-x 1 vagrant vagrant     30 Jan 29 20:42 11-lists
+-rwxr-xr-x 1 vagrant vagrant     31 Jan 29 20:11 12-file_type
+-rwxr-xr-x 1 vagrant vagrant     33 Jan 29 20:01 13-symbolic_link
+-rwxr-xr-x 1 vagrant vagrant     28 Jan 29 20:01 14-copy_html
+-rwxr-xr-x 1 vagrant vagrant     35 Jan 29 20:33 15-lets_move
+-rwxr-xr-x 1 vagrant vagrant     18 Jan 29 20:02 16-clean_emacs
+-rwxr-xr-x 1 vagrant vagrant     42 Jan 29 20:02 17-tree
+-rwxr-xr-x 1 vagrant vagrant     20 Jan 29 20:24 18-commas
+-rwxr-xr-x 1 vagrant vagrant     15 Jan 29 19:57 2-bring_me_home
+-rwxr-xr-x 1 vagrant vagrant     19 Jan 29 19:57 3-listfiles
+-rwxr-xr-x 1 vagrant vagrant     19 Jan 29 19:58 4-listmorefiles
+-rwxr-xr-x 1 vagrant vagrant     19 Jan 29 19:59 5-listfilesdigitonly
+-rwxr-xr-x 1 vagrant vagrant     34 Jan 29 19:59 6-firstdirectory
+-rwxr-xr-x 1 vagrant vagrant     41 Jan 29 20:09 7-movethatfile
+-rwxr-xr-x 1 vagrant vagrant     36 Jan 29 20:00 8-firstdelete
+-rwxr-xr-x 1 vagrant vagrant     33 Jan 29 20:00 9-firstdirdeletion
+-rw-r--r-- 1 vagrant vagrant     11 Jan 29 19:41 README.md
+-rw-r--r-- 1 vagrant vagrant      0 Jan 29 20:50 holberton.mgc
+-rwxr-xr-x 1 vagrant vagrant 110080 Jan 29 20:52 ls
+➜  0x00-shell_basics git:(master) ✗ file --mime-type -m holberton.mgc *
+0-current_working_directory: text/plain
+10-back:                     text/plain
+11-lists:                    text/plain
+12-file_type:                text/plain
+13-symbolic_link:            text/plain
+14-copy_html:                text/plain
+#15-lets_move#:              text/plain
+15-lets_move:                text/plain
+16-clean_emacs:              text/plain
+17-tree:                     text/plain
+18-commas:                   text/plain
+1-listit:                    text/plain
+2-bring_me_home:             text/plain
+3-listfiles:                 text/plain
+#4-listmorefiles#:           text/plain
+4-listmorefiles:             text/plain
+5-listfilesdigitonly:        text/plain
+6-firstdirectory:            text/plain
+7-movethatfile:              text/plain
+8-firstdelete:               text/plain
+9-firstdirdeletion:          text/plain
+holberton.mgc:               inode/x-empty
+ls:                          application/octet-stream
+README.md:                   text/plain
+➜  0x00-shell_basics git:(master) ✗ ls
+#15-lets_move#               12-file_type      18-commas             7-movethatfile
+#4-listmorefiles#            13-symbolic_link  2-bring_me_home       8-firstdelete
+0-current_working_directory  14-copy_html      3-listfiles           9-firstdirdeletion
+1-listit                     15-lets_move      4-listmorefiles       README.md
+10-back                      16-clean_emacs    5-listfilesdigitonly  holberton.mgc
+11-lists                     17-tree           6-firstdirectory      ls
+➜  0x00-shell_basics git:(master) ✗ emacs ls
+➜  0x00-shell_basics git:(master) ✗ emacs ls
+
+File Edit Options Buffers Tools Help                                                               
+^@\351P\374\377\377\377%\242|!^@h:^@^@^@\351@\374\377\377\377%\232|!^@h;^@^@^@\3510\374\377\377\37\
+7%\222|!^@h<^@^@^@\351 \374\377\377\377%\212|!^@h=^@^@^@\351^P\374\377\377\377%\202|!^@h>^@^@^@\35\
+1^@\374\377\377\377%z|!^@h?^@^@^@\351\360\373\377\377\377%r|!^@h@^@^@^@\351\340\373\377\377\377%j|\
+!^@hA^@^@^@\351\320\373\377\377\377%b|!^@hB^@^@^@\351\300\373\377\377\377%Z|!^@hC^@^@^@\351\260\37\
+3\377\377\377%R|!^@hD^@^@^@\351\240\373\377\377\377%J|!^@hE^@^@^@\351\220\373\377\377\377%B|!^@hF^\
+@^@^@\351\200\373\377\377\377%:|!^@hG^@^@^@\351p\373\377\377\377%2|!^@hH^@^@^@\351`\373\377\377\37\
+7%*|!^@hI^@^@^@\351P\373\377\377\377%"|!^@hJ^@^@^@\351@\373\377\377\377%^Z|!^@hK^@^@^@\3510\373\37\
+7\377\377%^R|!^@hL^@^@^@\351 \373\377\377\377%
+|!^@hM^@^@^@\351^P\373\377\377\377%^B|!^@hN^@^@^@\351^@\373\377\377\377%\372{!^@hO^@^@^@\351\360\3\
+72\377\377\377%\362{!^@hP^@^@^@\351\340\372\377\377\377%\352{!^@hQ^@^@^@\351\320\372\377\377\377%\\
+342{!^@hR^@^@^@\351\300\372\377\377\377%\332{!^@hS^@^@^@\351\260\372\377\377\377%\322{!^@hT^@^@^@\\
+351\240\372\377\377\377%\312{!^@hU^@^@^@\351\220\372\377\377\377%\302{!^@hV^@^@^@\351\200\372\377\\
+377\377%\272{!^@hW^@^@^@\351p\372\377\377\377%\262{!^@hX^@^@^@\351`\372\377\377\377%\252{!^@hY^@^@\
+^@\351P\372\377\377\377%\242{!^@hZ^@^@^@\351@\372\377\377\377%\232{!^@h[^@^@^@\3510\372\377\377\37\
+7%\222{!^@h\^@^@^@\351 \372\377\377\377%\212{!^@h]^@^@^@\351^P\372\377\377\377%\202{!^@h^^@^@^@\35\
+1^@\372\377\377\377%z{!^@h_^@^@^@\351\360\371\377\377\377%r{!^@h`^@^@^@\351\340\371\377\377\377%j{\
+!^@ha^@^@^@\351\320\371\377\377\377%b{!^@hb^@^@^@\351\300\371\377\377\377%Z{!^@hc^@^@^@\351\260\37\
+1\377\377\377%R{!^@hd^@^@^@\351\240\371\377\377\377%J{!^@he^@^@^@\351\220\371\377\377\377%B{!^@hf^\
+@^@^@\351\200\371\377\377\377%:{!^@hg^@^@^@\351p\371\377\377\377%2{!^@hh^@^@^@\351`\371\377\377\37\
+7%*{!^@hi^@^@^@\351P\371\377\377\377%"{!^@hj^@^@^@\351@\371\377\377\377%^Z{!^@hk^@^@^@\3510\371\37\
+7\377\377%^R{!^@hl^@^@^@\351 \371\377\377\377%
+{!^@hm^@^@^@\351^P\371\377\377\377%^B{!^@hn^@^@^@\351^@\371\377\377\377%\372z!^@ho^@^@^@\351\360\3\
+70\377\377P\271\210,A^@\272\246^N^@^@\27667A^@\277\230<A^@\350\226\373\377\377f^O^_D^@^@AWAVAUATUH\
+\211\365S\211\373H\201\354\210^C^@^@H\213>dH\213^D%(^@^@^@H\211\204$x^C^@^@1\300\350\257\255^@^@\2\
+76^YiA^@\277^F^@^@^@\350^P\376\377\377\276^\8A^@\277^@8A^@\3501\372\377\377\277^@8A^@\350\347\371\\
+377\377\277^@\242@^@\307^EX|!^@^B^@^@^@\350\263\365^@^@H\270^@^@^@^@^@^@^@\200\307^E\357\206!^@^@^\
+@^@^@\306^E\210\207!^@^AH\211^E1\210!^@\213^E^W|!^@H\307^E0\210!^@^@^@^@^@H\307^E^]\210!^@\377\377\
+\377\377\306^E~\207!^@^@\203\370^B^O\204\210^H^@^@\203\370^Ct/\203\350^At^E\350\226\370\377\377\27\
+7^A^@^@^@\350\354\370\377\377\205\300^O\204P^N^@^@\307^E\252\207!^@^B^@^@^@\306^EC\207!^@^A\353^V\\
+276^E^@^@^@1\377\307^E\220\207!^@^@^@^@^@\350{\274^@^@\277.8A^@\307^Ex\207!^@^@^@^@^@\307^Ej\207!^\
+@^@^@^@^@\306^Eb\207!^@^@\306^EY\207!^@^@\306^EQ\207!^@^@\307^E/\207!^@^@^@^@^@\306^E^P\207!^@^@\3\
+07^E^B\207!^@^A^@^@^@\306^E\371\206!^@^@\306^E\361\206!^@^@\307^E\342\206!^@^@^@^@^@H\307^E\317\20\
+6!^@^@^@^@^@H\307^E\274\206!^@^@^@^@^@\306^E:\207!^@^@\350x\367\377\377H\205\300I\211\304t/\271^D^\
+@^@^@\272`dA^@\276\200dA^@H\211\307\350\351s^@^@\205\300^O\210^W^M^@^@H\2301\377\2134\205`dA^@\350\
+\301\273^@^@\277<8A^@H\307^E9\206!^@P^@^@^@\350,\367\377\377I\211\304H\215D$@M\205\344H\211D$ t^KA\
+\200<$^@^O\205^G^M^@^@H\213T$ 1\300\276^ST^@^@\277^A^@^@^@\350\351\371\377\377\203\370\377t^Q^O\26\
+7D$Bf\205\300t^GH\211^E\353\205!^@\277D8A^@\350\331\366\377\377H\205\300I\211\304H\307^E\340\205!^\
+@^H^@^@^@t(H\213L$ E1\3001\3221\366H\211\307\350\202\343^@^@\205\300^O\205\245^V^@^@H\213D$@H\211^\
+E\266\205!^@E1\366E1\355E1\344^O^_D^@^@L\215D$8\271\2000A^@\272\310[A^@H\211\356\211\337\307D$8\37\
+7\377\377\377\350_\370\377\377\203\370\377^O\204\304^F^@^@^E\203^@^@^@=^R^A^@^@^O\207\217^F^@^@\37\
+7$\3050#A^@\306^E\315\205!^@^A\307^E\316\205!^@^@^@^@^@\353\254A\276^A^@^@^@\353\244\306^E\201\205\
+!^@^A\353\233\307^E\241\205!^@\260^@^@^@\307^E\213\205!^@\260^@^@^@H\307^E\204\205!^@^A^@^@^@H\307\
+^E\241y!^@^A^@^@^@\351l\377\377\377\307^E\202\205!^@^@^@^@^@\306^E\224y!^@^@\351V\377\377\377\203=\
+o\205!^@^@\307^E^]\205!^@^B^@^@^@\307^ES\205!^@\377\377\377\377^O\204;^P^@^@\306^EB\205!^@^@\306^E\
+ \205!^@^@A\275^A^@^@^@\351^\\377\377\377\306^E\362\204!^@^A\351^P\377\377\377\307^E"\205!^@^A^@^@\
+^@\351^A\377\377\377\276^E^@^@^@1\377\350^E\272^@^@\351\360\376\377\377\307^E\276\204!^@^B^@^@^@\3\
+51\341\376\377\377\306^E'\205!^@^A\351\325\376\377\377\307^E\343\204!^@^A^@^@^@A\275^A^@^@^@\351\3\
+00\376\377\377\307^E\316\204!^@\377\377\377\377A\275^A^@^@^@\351\253\376\377\377H\213L$ H\213=\257\
+y!^@E1\3001\3221\366\350\363\341^@^@\205\300^O\205X^O^@^@H\213D$@H\211^E'\204!^@\351z\376\377\377\\
+307^E\210\204!^@^B^@^@^@A\275^A^@^@^@\351e\376\377\377\306^E<\204!^@^A\351Y\376\377\377\276^C^@^@^\
+@1\377\350]\271^@^@\351H\376\377\3771\3661\377\350O\271^@^@\351:\376\377\377\307^E^P\204!^@^E^@^@^\
+@\351+\376\377\377\277^P^@^@^@L\213=/y!^@\350*\337^@^@H\213^U\343\203!^@L\2118H\211P^HH\211^E\325\\
+203!^@\351^@\376\377\377\307^E\326\203!^@^C^@^@^@\351\361\375\377\377\306^E"x!^@^@\351\345\375\377\
+\377\307^E\327\203!^@^C^@^@^@\351\326\375\377\377\306^E\317\203!^@^A\351\312\375\377\377\307^E\340\
+\203!^@^B^@^@^@\351\273\375\377\377\277^P^@^@^@\350\301\336^@^@H\213^Uz\203!^@H\307^@d8A^@\277^P^@\
+^@^@H\211^Eg\203!^@H\211P^H\350\236\336^@^@H\213^UW\203!^@H\307^@c8A^@H\211P^HH\211^EE\203!^@\351p\
+\375\377\377\203=A\203!^@^@^O\205c\375\377\377\307^E1\203!^@^A^@^@^@\351T\375\377\377\203=m\203!^@\
+^@^O\204G\375\377\377\307^E]\203!^@^A^@^@^@\3518\375\377\3771\377\350Qi^@^@\213^Egw!^@H\213^Mdw!^@\
+\203\370^A^O\204\336^M^@^@\203\370^B\276^O8A^@\270^N8A^@H^OE\360H\213=\343w!^@H\307^D$^@^@^@^@A\27\
+1\2758A^@A\270\3158A^@\272\3747A^@1\300\350\343\334^@^@1\377\350\234\371\377\377L\213%\345w!^@\351\
+\320\374\377\377L\213^M^Qw!^@H\2135\322w!^@A\270^D^@^@^@\271P/A^@\272\200/A^@\277\2038A^@\350\230r\
+^@^@\213^D\205P/A^@\211^E\267\202!^@\351\226\374\377\377L\213^M\327v!^@H\2135\230w!^@A\270^D^@^@^@\
+-UU=:----F1  ls              9% L7     (Fundamental) ----------------------------------------------
+
