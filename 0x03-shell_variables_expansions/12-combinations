@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%0.2f\n' $NUM
+echo {{a..z}{a..n},{a..z}{p..z},{a..n}o,{p..z}o} | tr " " "\n" | sort
