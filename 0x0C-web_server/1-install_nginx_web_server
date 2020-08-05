@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Installs NGINX
+# NGINX should be listening on port 80
+# When requesting a page with curl, it must return a page that contains "Holberton School"
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sudo service nginx start
