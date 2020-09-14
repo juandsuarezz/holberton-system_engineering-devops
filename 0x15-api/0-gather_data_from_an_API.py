@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Pings a To-Do API for data and displays tasks completed and tasks done for a specified user"""
+"""Pings a To-Do API for data and displays tasks completed
+and tasks done for a specified user"""
 import requests
 from sys import argv
 

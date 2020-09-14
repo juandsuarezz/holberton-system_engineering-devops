@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Pings a To-Do API for data on a specified user and saves the data to a CSV file"""
+"""Pings a To-Do API for data on a specified user and
+saves the data to a CSV file"""
 import csv
 import requests
 from sys import argv
