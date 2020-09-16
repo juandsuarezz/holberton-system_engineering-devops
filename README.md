@@ -35,4 +35,4 @@ The following project consisted of writing scripts using bash syntax and interpr
 19. **[0x14-mysql](https://github.com/juandsuarezz/holberton-system_engineering-devops/tree/master/0x14-mysql)**
 20. **[0x15-api](https://github.com/juandsuarezz/holberton-system_engineering-devops/tree/master/0x15-api)**
 
-2018 - All programs written by Juan David Suarez Wilches ([@juandsuarezz1](https://twitter.com/juandsuarezz1)) at [Holberton School](https://www.holbertonschool.com/)
+2020 - All programs written by Juan David Suarez Wilches ([@juandsuarezz1](https://twitter.com/juandsuarezz1)) at [Holberton School](https://www.holbertonschool.com/)
